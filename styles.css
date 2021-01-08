@@ -47,6 +47,10 @@ footer {
   margin-left: 1rem;
 }
 
+footer {
+  margin-top: 4rem;
+}
+
 header img {
   height: 246px;
   width: 200px;
