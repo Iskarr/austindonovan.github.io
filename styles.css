@@ -21,7 +21,7 @@ body {
   font-family: "Noto Sans", sans-serif;
   font-size: 18px;
   line-height: 1.5;
-  margin: 0.5rem;
+  margin: 0 auto;
 }
 
 header h1 {
