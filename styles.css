@@ -1,216 +1,64 @@
-@media (min-width: 720px) {
-  main {
-    column-count: 2;
-    column-gap: 15px;
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+@media only screen and (min-width: 520px) {
+  body {
+    max-width: 960px;
+    margin: auto;
+    font-family: "Noto Sans", sans-serif;
   }
 
-  section {
-    break-inside: avoid;
+  header h1 {
+    font-size: 32px;
+    text-align: left;
+    padding-left: 1rem;
   }
-}
 
-@media (min-width: 1080px) {
-  main {
-    column-count: 3;
+  header img {
+    float: right;
   }
-}
-
-/* Styling */
-
-:root {
-  --blue: #34495e;
-  --green: #e74c3c;
-  --yellow: #c9c243;
-  --orange: #ffa644;
-  --red: #3498db;
-}
-
-header {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px 20px 0;
-}
-
-main {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
 }
 
 body {
-  background-color: var(--blue);
-  font-family: "Ubuntu", sans-serif;
-  color: #34495e;
-  height: 100%;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0.5rem;
 }
 
-#container {
-  height: 100%;
-  margin-bottom: -330px;
-  position: relative;
-}
-#footer {
-  background-color: #666;
-  font-size: 1.4em;
+header h1 {
+  font-size: 24px;
   text-align: center;
-  height: 240px;
-  position: relative;
-  padding: 1%;
-}
-.clearfooter {
-  height: 330px;
-  clear: both;
-}
-
-.footerWrap {
-  width: 100%;
-  position: relative;
-  bottom: 0px;
-}
-.footer {
-  width: 400px;
-  margin: auto;
-}
-.footerContent {
-  float: left;
-  width: 100%;
-  background-color: #666;
-  padding: 20px 0;
-}
-.footer p {
-  float: left;
-  width: 100%;
-  text-align: center;
-}
-
-.title {
-  font-size: 2.6em;
-  text-align: center;
-  color: white;
-  margin-bottom: 20px;
-}
-
-.section-img.profile {
-  border-radius: 15px;
+  padding-left: 1rem;
 }
 
 h2 {
-  font-size: 1.4em;
-  padding: 10px;
+  font-size: 24px;
+  padding-left: 1.5rem;
 }
 
-p {
-  margin-bottom: 1em;
-  padding: 0 10px;
-}
-
-.info-link {
-  text-decoration: none;
-  color: var(--green);
-  padding: 10px;
-  display: block;
-}
-
-.options {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  padding: 10px;
-  border-radius: 3px;
-  background-color: white;
-}
-
-.options-link:hover {
-  background-color: red;
-}
-
-ul {
-  border-top: 3px solid var(--red);
+header,
+footer {
+  border-top: 2px solid #3498db;
+  background-color: #34495e;
+  color: white;
   text-align: center;
-  min-width: 500px;
+  padding: 0.25rem;
+  border-radius: 10px;
+  margin-right: 1rem;
+  margin-left: 1rem;
 }
 
-ul::after {
-  text-align: justify;
-  display: inline-block;
+header img {
+  height: 246px;
+  width: 200px;
+  margin: 0.5rem 0.5rem auto;
+  box-shadow: 5px 6px 6px #111;
+  border-radius: 5px;
+}
+
+#byuLink {
+  color: white;
 }
 
 li {
-  display: inline-block;
-}
-
-.options-link {
-  text-decoration: none;
-  font-size: 0.9em;
-  color: var(--red);
-}
-
-/* Navbar */
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #666;
-  top: 0;
-  width: 100%;
-}
-
-li {
-  /* border-left: 1px solid #bbb; */
-  border-right: 1px solid #bbb;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-  background-color: #111;
-}
-
-section {
-  border-top: 3px solid var(--red);
-  border-radius: 3px;
-  background-color: white;
-  margin-bottom: 20px;
-  overflow: hidden;
-}
-
-.section-img {
-  display: block;
-  padding: 10px;
-  margin: 0 auto;
-}
-
-.bigtitle {
-  padding: 0;
-}
-
-.bigtitle-title {
-  color: white;
-  background-color: var(--red);
-  margin-bottom: 10px;
-}
-
-.bigbottom-link {
-  background-color: var(--green);
-  color: white;
-}
-
-.profile {
-  width: 80%;
-  border-radius: 50%;
-  margin-bottom: 10px;
-}
-
-@media (min-width: 620px) {
-  .options-link {
-    font-size: 1.4em;
-  }
+  margin-left: 00.5rem;
 }

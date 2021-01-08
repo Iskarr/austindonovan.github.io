@@ -3,98 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./reset.css" />
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Ubuntu"
-      rel="stylesheet"
-    />
-    <title>Assignment Portal</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Portal</title>
   </head>
   <body>
     <header>
-      <h1 class="title">Austin Donovan</h1>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About </a></li>
-          <li><a href="#">Work Content</a></li>
-          <li>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://github.com/iskarr"
-              >GitHub</a
-            >
-          </li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
+      <img src="./images/Selfie.jpg" alt="profile picture" />
+      <h1>Austin Donovan</h1>
     </header>
-    <div id="container">
-      <main>
-        <section>
-          <h2>Assignment Portal</h2>
-          <p>This is a list of all the assignments for WDD 230 currently:</p>
-          <br />
-          <p>Assignment 1: <a href="#">Assignment One</a></p>
-          <a href="#" class="info-link">Learn more...</a>
-        </section>
-        <section>
-          <h2>Coming Soon...</h2>
-          <p>
-            Some Text goes here, some text goes here, some text goes here, some
-            text goes here.
-          </p>
-          <img
-            class="section-img"
-            src="https://emojipedia-us.s3.amazonaws.com/thumbs/120/emoji-one/104/chart-with-upwards-trend_1f4c8.png"
-            alt="important graph"
-          />
-          <a href="#" class="info-link">Learn more...</a>
-        </section>
-        <section>
-          <h2>Learn about who I am</h2>
-          <img
-            class="section-img profile"
-            src="./images/Selfie.jpg"
-            alt="Image of Cat for now"
-          />
-          <p>
-            I'm a self taught software developer who loves anything code
-            related!
-          </p>
-          <a href="#" class="info-link">Learn more...</a>
-        </section>
-        <section class="bigbottom">
-          <h2>Coming Soon...</h2>
-          <p>
-            Some Text goes here, some text goes here, some text goes here, some
-            text goes here.
-          </p>
-          <a class="info-link" href="#">Learn more...</a>
-        </section>
-        <section class="bigtitle">
-          <h2>Coming Soon...</h2>
-          <p>
-            Some Text goes here, some text goes here, some text goes here, some
-            text goes here.
-          </p>
-          <a href="#" class="info-link">Learn more...</a>
-        </section>
-        <section>
-          <h2>Coming Soon...</h2>
-          <p>
-            Some Text goes here, some text goes here, some text goes here, some
-            text goes here.
-          </p>
-          <a href="#" class="info-link">Learn more...</a>
-        </section>
-      </main>
-      <div class="clearfooter"></div>
-      <div id="footer" style="color: black">
-        © 2021 | Austin Donovan | Utah | BYU-Idaho LINK
-      </div>
-    </div>
+    <main>
+      <section>
+        <h2>WDD 230: Assignment Portal</h2>
+        <hr />
+        <ul>
+          <li>Lesson 02: <a href="#">Assignment Link</a></li>
+          <li>Lesson 03: <a href="#">Assignment Link</a></li>
+          <li>
+            Lesson 04: <a href="#">Link</a> |
+            <a href="#">Link</a>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      © <span id="year"></span> | Austin Donovan | Utah |
+      <a id="byuLink" href="#">BYUI Online Learning</a>
+      <br />
+      Last updated: <span id="date"></span>
+    </footer>
+
+    <script src="./index.js"></script>
   </body>
 </html>
