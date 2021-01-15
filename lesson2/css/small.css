@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
+:root {
+  --blue: #3498db;
+  --white: #ffffff;
+  --bgColor: #34495e;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Raleway", Ubuntu, sans-serif;
+  color: #5e7587;
+}
+
+picture img {
+  margin-top: 1rem;
+  max-width: 70vw;
+  max-height: 70vh;
+}
+
+a {
+  color: #536878;
+  font-size: 1.1em;
+}
+
+footer a {
+  color: #fff;
+}
+
+#back-btn {
+  text-align: center;
+  background-color: #3498db;
+}
+
+/* phone or baseline views **************************/
+main {
+  max-width: 60rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  font-size: 1rem;
+  text-align: center;
+  margin: 0 auto;
+}
+
+main section h2 {
+  color: #536878;
+}
+
+main section {
+  border-top: #3498db solid 2px;
+  margin: 0.5rem;
+  padding: 0 1rem;
+  background-color: #eee;
+}
+
+#back-btn {
+  padding: 0.5rem;
+}
+#back-btn:hover {
+  background-color: rgba(14, 14, 14, 0.172);
+}
+
+main section:nth-child(4) {
+  display: block;
+  grid-column: span 1;
+  margin: 1rem;
+  padding: 1rem;
+  color: #ffffff;
+}
+
+header,
+footer {
+  border-top: 2px solid #3498db;
+  background-color: #34495e;
+  color: white;
+  text-align: center;
+  padding: 0.25rem;
+}
+
+footer {
+  margin-top: 4rem;
+}
