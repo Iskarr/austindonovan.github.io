@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@media only screen and (min-width: 37.5em) {
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  nav {
+    border-radius: 5px;
+  }
+
+  footer {
+    border-radius: 5px;
+  }
+
+  main section:nth-child(1) {
+    display: block;
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  main section:nth-child(2) {
+    display: block;
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  main section:nth-child(3) {
+    display: block;
+    grid-column: span 1;
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  main section:nth-child(4) {
+    display: block;
+    grid-column: span 1;
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  main section picture {
+    display: block;
+  }
+  main section picture img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #bbb;
+  }
+
+  #back-btn {
+    grid-column: span 2;
+    text-align: center;
+  }
+
+  nav ul {
+    display: flex;
+  }
+  nav ul li {
+    flex: 1 1 100%;
+  }
+}
