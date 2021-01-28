@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/small.css" />
+    <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/small.css" />
     <link rel="stylesheet" href="./css/medium.css" />
     <link rel="stylesheet" href="./css/large.css" />
@@ -11,22 +11,35 @@
   </head>
   <body>
     <header>
-      <h1>Company Name Here</h1>
-      <div>Possible Slogan or Tagline</div>
+      <picture>
+        <img src="./images/weathergeared-512.png" alt="" />
+      </picture>
+      <section>
+        <h1>Weather Geared</h1>
+        <span>
+          dont just be geared, be weather geared for whatever the weather
+          brings.
+        </span>
+      </section>
     </header>
     <nav class="clearfix">
-      <button onclick="toggleMenu()">&#9776;</button>
+      <button onclick="toggleMenu()">&#9776; Menu</button>
       <ul id="primaryNav" class="hide">
-        <li><a href="#">Home</a></li>
-        <li><a class="active" href="#">Products</a></li>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="#">Products</a></li>
         <li><a href="#">Location</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
     </nav>
     <main>
-      <section>
-        <h2>Preston Idaho</h2>
-      </section>
+      <h2>Preston Idaho</h2>
+      <div class="contentBox">Hero w/ weather summary</div>
+      <div class="contentBox">5 day forcast</div>
+      <div class="contentBox">Article</div>
+      <div class="contentBox">Contact infomation</div>
+      <a id="portalBtn" href="https://iskarr.github.io/austindonovan.github.io/"
+        >Back to portal</a
+      >
     </main>
     <footer>
       © <span id="year"></span> | Austin Donovan | Utah |
@@ -38,7 +51,8 @@
         >BYUI Online Learning</a
       >
       <br />
-      Last updated: <span id="date"></span>
+      Last updated: <date></date>
     </footer>
+    <script src="./js/scripts.js"></script>
   </body>
 </html>
