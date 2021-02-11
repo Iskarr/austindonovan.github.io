@@ -1,0 +1,310 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Raleway&family=Roboto+Slab&display=swap"); */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eee;
+  font-family: "Roboto Slab", serif;
+}
+
+span {
+  font-family: "Roboto Slab", sans-serif;
+}
+
+nav button {
+  margin: 0.2rem 2%;
+  background-color: transparent;
+  border: none;
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+nav {
+  background-color: #0388a6;
+  font-family: "Roboto Slab", sans-serif;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li a {
+  display: block;
+  padding: 0.8rem 2%;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+nav ul li.active a {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+nav ul li a:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+nav ul.hide {
+  display: none;
+}
+
+/* footer */
+header,
+nav,
+main,
+footer {
+  max-width: 65.5rem;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+header img {
+  width: 300px;
+  height: 250px;
+}
+
+header,
+footer {
+  padding: 0.25rem;
+}
+
+footer {
+  background-color: #0388a6;
+  color: #fff;
+  margin-top: 1rem;
+}
+
+h1 {
+  color: #0388a6;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.contentBox {
+  display: block;
+  background-color: #ccc;
+  color: #444;
+  margin: 10px auto;
+  font-style: italic;
+  padding: 1rem;
+  border: 1px solid #000;
+}
+
+.mapContent {
+  display: flex;
+  background-color: #ccc;
+  color: #444;
+  margin: 10px auto;
+  font-style: italic;
+  padding: 1rem;
+  border: 1px solid #000;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  font-family: "Noto Sans JP", sans-serif;
+}
+section {
+  padding-left: 1rem;
+  text-align: center;
+  max-width: 20rem;
+}
+
+h2 {
+  text-align: center;
+}
+
+#logo {
+  margin-top: 1rem;
+  max-width: 84px;
+  max-height: 84px;
+}
+
+nav nav ul li a {
+  text-align: center;
+}
+
+nav button {
+  display: block;
+  margin: 0 auto;
+}
+
+.active {
+  color: #f2e205;
+}
+
+#byuLink {
+  color: #fff;
+}
+
+#portalBtn {
+  background-color: #0388a6;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#portalBtn:hover {
+  color: #0388a6;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* town and aside */
+
+#town {
+  width: 428px;
+  max-height: 400px;
+}
+.herodiv {
+  margin: 10px auto;
+  position: relative;
+}
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+.stats {
+  position: absolute;
+  top: 30px;
+  left: 50px;
+  background: radial-gradient(#eee, #4567aa);
+  border: 1px solid #0388a6;
+  padding: 1.4rem;
+  box-shadow: 0 0 30px #111;
+  opacity: 0.8;
+}
+
+aside {
+  background-color: #f2e205;
+  padding: 1.2rem;
+}
+aside p {
+  text-align: center;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+.weatherIcon {
+  width: 95px;
+  height: 75px;
+}
+
+/* five day forcast */
+
+.flex {
+  display: none;
+  /* flex-direction: row; */
+  /* let us combine row and wrap with flow */
+  flex-flow: row wrap;
+}
+
+#forcastTitle {
+  display: none;
+}
+
+main h2 {
+  color: #1e5799;
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+.flex-col {
+  flex: 1 1 auto;
+  background-color: #2561a0;
+}
+.flex-col,
+.column-col,
+.grid-col {
+  border-bottom: 1px solid #333;
+  border-left: 1px solid #333;
+  text-align: center;
+}
+
+.flex,
+.column,
+.grid {
+  border-right: 1px solid #333;
+}
+
+.col-head {
+  display: block;
+  padding: 5px;
+  border-bottom: 1px solid #333;
+  text-align: center;
+}
+
+.data {
+  display: block;
+  padding: 0 5px 5px;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.col-head,
+th {
+  font-weight: 700;
+  font-size: 1rem;
+  background-color: #0388a6;
+  color: white;
+}
+
+/* Article CSS */
+#articleImage {
+  width: 25rem;
+  height: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#articleTitle {
+  font-size: 1.5em;
+  color: #444;
+}
+.articleTitle {
+  font-size: 1em;
+  color: #1e5799;
+}
+#articleBody {
+  text-align: left;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1em;
+  color: #111;
+  font-style: normal;
+}
+
+#articleBody::first-letter {
+  font-weight: bold;
+  font-size: 2.4em;
+  padding-right: 6px;
+}
+
+#map {
+  position: relative;
+  height: 400px;
+  width: 100%;
+  margin-right: 5px;
+}
+
+#mapLoco {
+  margin-top: 1rem;
+  font-size: 1.2em;
+  text-align: center;
+}
