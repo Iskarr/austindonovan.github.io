@@ -191,11 +191,8 @@
   .box {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
     transition: 0.3s;
-    width: 95%;
-    height: 28rem;
+    padding: 3%;
     background-color: #0388a6;
-    margin-bottom: 1rem;
-    margin-left: 1rem;
   }
 
   .box:hover {
@@ -203,15 +200,25 @@
   }
 
   .container {
-    padding: 2px 16px;
     background-color: #0388a6;
-    margin-bottom: 1rem;
   }
 
   .gallery {
     display: grid;
-    grid-gap: 1em;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 15px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 2fr));
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  figure {
+    margin: 10px;
+    width: 300px;
+    height: 450px;
+    margin-bottom: 1rem;
+  }
+
+  figure img,
+  figcaption {
+    width: 100%;
   }
 }

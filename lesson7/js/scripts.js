@@ -17,10 +17,6 @@ const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
 const datefield = document.querySelector("date");
 datefield.textContent = fulldate;
 
-function toggleMenu() {
-  document.getElementById("primaryNav").classList.toggle("hide");
-}
-
 // Google Map
 function initMap() {
   // The location of Uluru

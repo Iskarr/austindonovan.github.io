@@ -3,117 +3,125 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/normalize.minify.css" />
-    <link rel="stylesheet" href="./css/small.css" />
-    <link rel="stylesheet" href="./css/medium.css" />
-    <link rel="stylesheet" href="./css/large.css" />
+    <link rel="stylesheet" href="./css/minified/normalize.minify.css" />
+    <link rel="stylesheet" href="./css/minified/small.minify.css" />
+    <link rel="stylesheet" href="./css/minified/medium.minify.css" />
+    <link rel="stylesheet" href="./css/minified/large.minify.css" />
     <title>Document</title>
   </head>
   <body>
     <header>
-      <h1>Photo Gallery.</h1>
+      <picture>
+        <img id="logo" src="./images/weathergeared-resize.png" alt="logo" />
+      </picture>
+      <section>
+        <h1>Weather Geared</h1>
+        <span>
+          dont just be geared, be weather geared for whatever the weather
+          brings.
+        </span>
+      </section>
     </header>
-
+    <nav class="clearfix">
+      <button onclick="toggleMenu()">&#9776; Menu</button>
+      <ul id="primaryNav" class="hide">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Articles</a></li>
+        <li><a href="#">Location</a></li>
+        <li><a class="active" href="./gallery-7.htm">Gallery</a></li>
+      </ul>
+    </nav>
     <main class="gallery">
-      <div class="box">
+      <figure class="box">
         <img
           src="./images/placeholder-png.png"
-          data-src="//unsplash.it/300/400"
+          data-src="http://placekitten.com/300/400"
           alt="Placeholders"
         />
-        <div class="container">
-          <p>Lorem, ipsum dolor sit elit. Cum, consequatur.</p>
-        </div>
-      </div>
+        <figcaption>This is a nice caption!</figcaption>
+      </figure>
 
-      <div class="box">
+      <figure class="box">
         <img
           src="./images/placeholder-png.png"
-          data-src="//unsplash.it/300/400"
+          data-src="http://placekitten.com/300/400"
           alt="Placeholders"
         />
-        <div class="container">
-          <p>Lorem, ipsum dolor sit elit. Cum, consequatur.</p>
-        </div>
-      </div>
+        <figcaption>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis nam,
+          est perspiciatis repudiandae!
+        </figcaption>
+      </figure>
 
-      <div class="box">
+      <figure class="box">
         <img
           src="./images/placeholder-png.png"
-          data-src="//unsplash.it/300/400"
+          data-src="http://placekitten.com/300/400"
           alt="Placeholders"
         />
-        <div class="container">
-          <p>Architect & Engineer</p>
-        </div>
-      </div>
+        <figcaption>Lorem ipsum dolor sit!</figcaption>
+      </figure>
 
-      <div class="box">
+      <figure class="box">
         <img
           src="./images/placeholder-png.png"
-          data-src="//unsplash.it/300/400"
+          data-src="http://placekitten.com/300/400"
           alt="Placeholders"
         />
-        <div class="container">
-          <p>Architect & Engineer</p>
-        </div>
-      </div>
+        <figcaption>Lorem ipsum dolor sit amet.</figcaption>
+      </figure>
 
-      <div class="box">
+      <figure class="box">
         <img
           src="./images/placeholder-png.png"
           data-src="//unsplash.it/300/400"
           alt="Placeholders"
         />
-        <div class="container">
-          <p>Architect & Engineer</p>
-        </div>
-      </div>
+        <figcaption>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium?!
+        </figcaption>
+      </figure>
 
-      <div class="box">
+      <figure class="box">
         <img
           src="./images/placeholder-png.png"
           data-src="//unsplash.it/300/400"
           alt="Placeholders"
         />
-        <div class="container">
-          <p>Architect & Engineer</p>
-        </div>
-      </div>
+        <figcaption>This is a nice caption!</figcaption>
+      </figure>
 
-      <div class="box">
+      <figure class="box">
         <img
           src="./images/placeholder-png.png"
           data-src="//unsplash.it/300/400"
           alt="Placeholders"
         />
-        <div class="container">
-          <p>Architect & Engineer</p>
-        </div>
-      </div>
+        <figcaption>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse,
+          dolores.
+        </figcaption>
+      </figure>
 
-      <div class="box">
+      <figure class="box">
         <img
           src="./images/placeholder-png.png"
           data-src="//unsplash.it/300/400"
           alt="Placeholders"
         />
-        <div class="container">
-          <p>Architect & Engineer</p>
-        </div>
-      </div>
+        <figcaption>This is a nice caption!</figcaption>
+      </figure>
 
-      <div class="box">
+      <figure class="box">
         <img
           src="./images/placeholder-png.png"
           data-src="//unsplash.it/300/400"
           alt="Placeholders"
         />
-        <div class="container">
-          <p>Architect & Engineer</p>
-        </div>
-      </div>
+        <figcaption>This is a nice caption!</figcaption>
+      </figure>
     </main>
     <script src="./js/lazyloading.js" defer></script>
+    <script src="./js/menuToggle.js" defer></script>
   </body>
 </html>
