@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/minified/normalize.minify.css" />
+    <link rel="stylesheet" href="./css/small.css" />
+    <link rel="stylesheet" href="./css/medium.css" />
+    <link rel="stylesheet" href="./css/large.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <picture>
+        <img id="logo" src="./images/weathergeared-resize.png" alt="logo" />
+      </picture>
+      <section>
+        <h1>Weather Geared</h1>
+        <span>
+          dont just be geared, be weather geared for whatever the weather
+          brings.
+        </span>
+      </section>
+    </header>
+    <nav class="clearfix">
+      <button onclick="toggleMenu()">&#9776; Menu</button>
+      <ul id="primaryNav" class="hide">
+        <li><a href="./preston-6.htm">Home</a></li>
+        <li><a href="#">Articles</a></li>
+        <li><a class="active" href="./stormcenter.htm">Report a Storm</a></li>
+        <li><a href="./gallery-7.htm">Gallery</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <header>
+        <h2>Storm Report Application</h2>
+      </header>
+      <form method="GET" action="thanks.htm">
+        <fieldset>
+          <legend>Applicant Information</legend>
+          <label>
+            Full Name*
+            <input
+              class="bo"
+              type="text"
+              name="fullName"
+              pattern="^[a-zA-Z]{3,}(?: [a-zA-Z]+){0,2}$"
+              placeholder="John Doe"
+              required
+          /></label>
+          <br />
+          <label>
+            Phone*
+            <input
+              class="bo"
+              type="tel"
+              id="phone"
+              name="phone"
+              pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+              placeholder="1234567890"
+              required
+          /></label>
+          <br />
+          <label>
+            Email*
+            <input
+              class="bo"
+              type="email"
+              name="email"
+              placeholder="someone@gmail.com"
+              required
+          /></label>
+          <br />
+          <label>
+            Zip Code*
+            <input
+              class="bo"
+              type="number"
+              name="zip"
+              placeholder="00000"
+              required
+          /></label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Storm Details</legend>
+          <label>
+            Date of the Storm:
+            <input class="bo" type="date" name="completeDate" />
+          </label>
+          <br />
+          <label for="browser">Choose the type of storm:</label>
+          <input class="bo" list="browsers" name="browser" id="browser" />
+          <br />
+          <datalist id="browsers">
+            <option value="Flash Flood"></option>
+            <option value="Hail"></option>
+            <option value="Hurricane"></option>
+            <option value="Thunderstorm"></option>
+            <option value="Tornado"></option>
+          </datalist>
+
+          <br />
+          <label for="rating"
+            >Rating: &nbsp;&nbsp;&nbsp;
+            <input
+              type="range"
+              id="rating"
+              value="5"
+              min="1"
+              max="10"
+              step="1"
+              list="tickmarks"
+              oninput="adjustRating(this.value)"
+              onchange="adjustRating(this.value)"
+            />
+            <span id="ratingvalue">5</span>
+          </label>
+
+          <datalist id="tickmarks">
+            <option value="0"></option>
+            <option value="1"></option>
+            <option value="2"></option>
+            <option value="3"></option>
+            <option value="4"></option>
+            <option value="5"></option>
+            <option value="6"></option>
+            <option value="7"></option>
+            <option value="8"></option>
+            <option value="9"></option>
+            <option value="10"></option>
+          </datalist>
+
+          <div>Storm Region</div>
+          <label>
+            <select class="bo" name="browsers">
+              <option value="" disabled selected>Select a Region...</option>
+              <option value="preston">Preston</option>
+              <option value="soda">Soda Springs</option>
+              <option value="fish">Fish Haven</option>
+            </select>
+          </label>
+
+          <div>user in-danger level</div>
+          <div class="selection">
+            <label
+              ><input class="bo" type="radio" name="time" value="9" />
+              yes</label
+            >
+          </div>
+          <div class="selection">
+            <input type="radio" id="time3" name="time" value="10" />
+            <label for="time3">maybe</label>
+          </div>
+          <div class="selection">
+            <input type="radio" id="time4" name="time" value="11" />
+            <label for="time4">no</label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Additional Comments</legend>
+          <label>
+            Additional Information
+            <br />
+            <textarea
+              class="bo"
+              name="comments"
+              id="comments"
+              cols="33"
+              rows="10"
+              placeholder="Type your additional notes here..."
+            ></textarea>
+          </label>
+        </fieldset>
+        <input type="submit" value="Submit my Storm Report" class="submitBtn" />
+      </form>
+    </main>
+    <footer>
+      © <span id="year"></span> | Austin Donovan | Utah |
+      <a
+        id="byuLink"
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://byui.edu"
+        >BYUI Online Learning</a
+      >
+      <br />
+      Last updated: <date></date>
+    </footer>
+    <script src="./js/date.js" defer></script>
+    <script src="./js/rating.js" defer></script>
+    <script src="./js/lazyloading.js" defer></script>
+    <script src="./js/menuToggle.js" defer></script>
+  </body>
+</html>
