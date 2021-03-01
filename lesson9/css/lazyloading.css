@@ -1,0 +1,113 @@
+header h1 {
+  text-align: center;
+}
+
+picture img[data-src] {
+  filter: blur(0.2em);
+}
+picture img {
+  filter: blur(0em);
+  transition: filter 1.5s;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 6fr;
+  justify-items: center;
+}
+
+/* .lazyImage {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  vertical-align: bottom;
+}
+.lazyImage img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  transform: scale(1);
+  transition: background 0.5s, opacity 0.5s, transform 0.5s;
+}
+.lazyImageError img,
+.lazyImageWaiting img {
+  opacity: 0;
+  transform: scale(0);
+  transition: none;
+}
+.lazyImageError:after {
+  content: "Image Not Found";
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+  background: #ff4;
+  color: #f00;
+  border: 0.5em dashed #f00;
+  transform: scale(0);
+  transition: transform 0.5s;
+}
+.lazyImageErrorShow:after {
+  transform: scale(1);
+}
+.lazyImage:before {
+  content: "";
+  position: absolute;
+  width: 30%;
+  height: 0;
+  padding-top: 30%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: transform 0.5s, opacity 0.5s;
+  border: 1em solid;
+  border-color: #0484 #0488;
+  border-radius: 50%;
+}
+.lazyImageWaiting:before {
+  animation: spin 1s linear infinite;
+  opacity: 1;
+}
+@keyframes spin {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg) scale(1);
+  }
+  50% {
+    transform: translate(-50%, -50%) rotate(180deg) scale(0.7);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg) scale(1);
+  }
+}
+.lazyImage:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAMAAAC7IEhfAAAAulBMVEUBAAD/AAAIAAD/CgoOAAAZAAAUAAD/BQUeAAAuAAA9AAA4AAAoAAAjAADmAABCAAA0AAD/IiLhAAD/HR3ZAACcAAD/GBj6AADSAAB8AABMAAD/MDD/EhKxAACYAABRAAD/KSm5AACTAAB2AABHAAD1AADGAACBAADxAACkAACJAADqAACrAABqAABmAADJAADBAACgAACFAABhAACNAAC+AABdAABVAADeAADuAACPAABwAADNAAD/OTmppkF+AAAEnklEQVQ4yxSSWbKiQBREb3rVaocuLYrRAkQQZFIBh6c+3f+22v4/kZGRechNbJQFlCxMAz/UCgmcxc2PplGfUus/17GM6A1ixYbxNh4nyN0QbJKk4vGiW23XfUl3JaY3a9ZXpLv8C3o5bChlBAD2crP7gRevljwc5uF8PkOwpBwGENoqFbzE9wXsHAfndR0v7Ivj8IGGArMsdQjQBRpICJw/D0hPQDMdCntU7FoK4mB6Kfbjm0MKsJIzyqeCAD4MYyMclnF7GeVytXH4OlsVp1NFpuNQPjnJAeWVLBl2aHmH/T5ajTa7YVqb6wjRMKazr6VWLPEFlGA0XmlPAj8YZWKgtP3Zds2J6tAmGGbz0AkERIKQ4XVWvBnO0aSUVeZYv3Q439M5k4IE+N2EGq5i92kJuF22bVHPf1s/iKLXMVCX8Z3gGm1KIfOQhftN+3RAn8pqWw2LALtDulvM7hwQicIufcl4iI/+svwwrMax9ibZrtzc7Drz385o3d8o6TQAu9M+5wY6tAyzM+mbFcVDRQGL+WZop45FFnOBhxuqEMyWZ5Xyq8mJdvpwOe7qbfq4/Vm3Ed1IMIuELSMA8WQoDe0u85jix2tq8y8dq/h0FacRcXNOGI1A8u0HlUt8MGvDLA2e6ThtuI34ulxFR2IhE9dK4AowXKiQDV++Mx+nM3tNO29Wbbmjy4NcV8NjwPw/uysB9jT29CrmVJ8D6hGsaxnse7JYg23gLUOPn57yuFHBs15ucFz99tmktn+WDn4mpBIIZpYAc6k/sLSLReYG9z33yxj239p+kVPu/7VAbstpA0EQbcazy17ZNbGwUFlSdAGZi0QAAQ74/78ruCozD/3S1ae60WWP2bfdv3Z5dah8Nhb6vjLwUrA0FkAEICIIG+N3SYH1e8rnlwZfv26uEMozNMkAAUQjYgZCmtz7MDm779SKzecEf+Z7a6Ad2HtuFQzARkZG9lisOF0V4u3bJZd5GPvF8EQDUEYwe7awkF7gFm7vOdl89Nm7Dvnp2NsNNMhLTSyUAbyQrSK89uYz7Xi9+zMM60I1Se1L0k4qBCtF6ZWDFnDAZr/vj3X5SNdreZ1n1PxdNrE0IBUzR8/DzdmoCPpldkZXDQiHZFkv0qap6owUZwrOEgKJoDRZgdE3023sdje1qe7YFwMvLxw9iEoQ8FPcsmwFft9MUdX2a1d3b2NANt25B6CZACfV06MiGSEJ6T3gre6w/FWKyUeHR7KFVWQIlkxQpIRUioigq4WVp7+nWzmJy6ZKaD6pQoRgAy0oMHEU0nmgl4fLJSabkI3znK650fnIgrQiKp10gpSFgDb4sLS6X4/Dep5tpydznZ3p3Skd9Q+dgPD8H0Uzv+abw+F8mlt8TmvXX7ajapm11ELBe20ZpAIwJHmESY+yfPGqeSlj330Tac9MQGuRUZSsgoQXyeEo0sXZZdUXZ/MW5ZYGeND/kRhCkG8xOdvL683luzsdZrV/24xZ6lmXTy4JVuRaGDA59OtlO6z25fWjeGwXZyoO/UAeAEmwN2z0c56oJGQx7a6zWaRkNru2K0/baWjxzIJjQEoARND8D7+tgCt2HKJNAAAAAElFTkSuQmCC")
+    center center repeat;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.lazyImageWaiting:before {
+  opacity: 1;
+  transition: opacity 0s;
+}
+
+/* Image with 'data' attribute is hidden */
