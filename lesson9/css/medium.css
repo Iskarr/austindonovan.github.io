@@ -1,4 +1,4 @@
-@media only screen and (min-width: 32.5rem) {
+@media only screen and (min-width: 40.5rem) {
   nav {
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,1e5799+0,04bfbf+0,0388a6+100 */
     background: #1e5799; /* Old browsers */
@@ -53,7 +53,7 @@
     color: white;
     text-decoration: none;
     font-size: 17px;
-    width: 25%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+    width: 20%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
     text-align: center;
   }
 
