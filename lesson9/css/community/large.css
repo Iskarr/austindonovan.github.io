@@ -1,0 +1,59 @@
+@media only screen and (min-width: 64rem) {
+  nav {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,1e5799+0,04bfbf+0,0388a6+100 */
+    background: #1e5799; /* Old browsers */
+    background: -moz-linear-gradient(
+      top,
+      #1e5799 0%,
+      #1e5799 0%,
+      #04bfbf 0%,
+      #0388a6 100%
+    ); /* FF3.6-15 */
+    background: -webkit-linear-gradient(
+      top,
+      #1e5799 0%,
+      #1e5799 0%,
+      #04bfbf 0%,
+      #0388a6 100%
+    ); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(
+      to bottom,
+      #1e5799 0%,
+      #1e5799 0%,
+      #04bfbf 0%,
+      #0388a6 100%
+    ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#0388a6',GradientType=0 ); /* IE6-9 */
+  }
+
+  #logo {
+    margin-top: 1rem;
+    max-width: 156px;
+    max-height: 156px;
+  }
+
+  nav button {
+    display: none;
+  }
+
+  nav ul {
+    margin-left: 2%;
+  }
+
+  nav ul li a {
+    border: none;
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 0.6rem 1rem;
+    float: left;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    width: 14.23%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+    text-align: center;
+  }
+
+  nav ul.hide {
+    display: block;
+  }
+}

@@ -1,0 +1,174 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Raleway&family=Roboto+Slab&display=swap"); */
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  grid-gap: 1em;
+}
+
+header,
+footer {
+  grid-column: 1 / 4;
+}
+
+@media all and (max-width: 35.5rem) {
+  aside,
+  article {
+    grid-column: 1 / 4;
+    grid-row: 4;
+  }
+}
+
+/* Nav  */
+nav button {
+  margin: 0.2rem 2%;
+  background-color: transparent;
+  border: none;
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+nav {
+  text-align: center;
+  background-color: #0388a6;
+  font-family: "Roboto Slab", sans-serif;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li a {
+  display: block;
+  padding: 0.8rem 2%;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+nav ul li.active a {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+nav ul li a:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+nav ul.hide {
+  display: none;
+}
+
+header img {
+  width: 300px;
+  height: 250px;
+}
+
+header,
+footer {
+  padding: 0.25rem;
+}
+header img {
+  width: 300px;
+  height: 250px;
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  font-family: "Noto Sans JP", sans-serif;
+  margin-bottom: 1rem;
+}
+
+footer {
+  height: 5vh;
+  background-color: #0388a6;
+  color: #fff;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+/* Demo Specific Styles */
+
+body {
+  margin: 0 auto;
+  max-width: 65.5em;
+  padding: 1em 0;
+}
+
+header,
+aside,
+article {
+  background: #eaeaea;
+  align-items: center;
+  justify-content: center;
+  height: 15vh;
+}
+
+/*  */
+article p,
+article h2 {
+  text-align: center;
+}
+
+article {
+  margin-top: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+  background-color: #0388a6;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 0;
+  margin: 8px 12px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  overflow: hidden;
+  height: 28rem;
+}
+
+article h3 {
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
+
+.heroArticle {
+  border-radius: 2%;
+  height: 32rem;
+}
+
+.heroArticle img {
+  height: 20rem;
+  width: 80%;
+  margin-left: 9%;
+}
+
+.sidebar-left {
+  grid-column: 1 / 4;
+  padding: 10px;
+  height: 40rem;
+}
+
+.sidebar-left img {
+  height: 27rem;
+  border-radius: 15px;
+  width: 100%;
+}
+
+.sidebar-left p {
+  padding-bottom: 10rem;
+}
