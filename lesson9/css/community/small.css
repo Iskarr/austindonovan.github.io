@@ -12,11 +12,10 @@ footer {
   grid-column: 1 / 4;
 }
 
-@media all and (max-width: 35.5rem) {
+@media screen and (max-width: 35.5rem) {
   aside,
   article {
     grid-column: 1 / 4;
-    grid-row: 4;
   }
 }
 
@@ -111,7 +110,6 @@ body {
 header,
 aside,
 article {
-  background: #eaeaea;
   align-items: center;
   justify-content: center;
   height: 15vh;
@@ -147,14 +145,25 @@ img {
 }
 
 .heroArticle {
+  grid-column: 1 / 4;
   border-radius: 2%;
   height: 32rem;
 }
 
 .heroArticle img {
   height: 20rem;
-  width: 80%;
-  margin-left: 9%;
+  width: 45%;
+  margin: 10px auto 20px;
+  display: block;
+  text-align: center;
+}
+
+.linkToHero {
+  color: #fff;
+}
+
+.heroArticle p {
+  font-size: 1em;
 }
 
 .sidebar-left {
@@ -171,4 +180,34 @@ img {
 
 .sidebar-left p {
   padding-bottom: 10rem;
+}
+
+/* Main towns background */
+.mainTowns {
+  font-style: italic;
+  font-size: 1.1em;
+}
+
+#popTitle {
+  margin-left: 5%;
+  border-bottom: #fff 4px solid;
+  width: 90%;
+  text-align: center;
+}
+
+.popularRead {
+  text-align: center;
+}
+
+.topic {
+  color: #fff;
+  font-size: 1.2em;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+
+  padding-top: 1rem;
+}
+
+.sidebar-left p {
+  font-size: 1.2em;
 }

@@ -21,10 +21,15 @@
   <body>
     <header>
       <picture>
-        <img id="logo" src="./images/weathergeared-resize.png" alt="logo" />
+        <img
+          id="logo"
+          loading="lazy"
+          src="./images/weathergeared-resize.png"
+          alt="logo"
+        />
       </picture>
       <section>
-        <h1>Weather Geared</h1>
+        <h1>Weather Geared Community</h1>
         <span>
           dont just be geared, be weather geared for whatever the weather
           brings.
@@ -48,20 +53,40 @@
         <article class="sidebar-left">
           <h2>Event of the Day</h2>
           <h3>Rock Climbing up Mt. Preston</h3>
-          <img src="./fishhaven.jpg" alt="mt Preston" />
+          <img src="./fishhaven.jpg" alt="mt Preston" loading="lazy" />
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis,
-            incidunt.
+            Rock Climbing this week is our event of the week. If you plan to
+            climb Mt. Preston, come join the discussion and
+            <a class="linkToHero" href="#">join here</a>
           </p>
         </article>
         <article class="heroArticle">
-          <h2>Hero of the Day</h2>
+          <h2>Hero of the Week</h2>
           <h3>Felicia faux</h3>
-          <img src="./images/felicia.jpg" alt="heroImage" />
+          <img
+            src="./images/felicia-resize.jpg"
+            alt="heroImage"
+            loading="lazy"
+          />
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam,
-            aut!
+            Felicia is our hero of the day! After a long day at work, and a full
+            time school schedule, she makes time in her week to go and help at a
+            local soup kitchen to provide for those who need it most!
+            <a class="linkToHero" href="#"> Here </a>
           </p>
+        </article>
+        <article class="popularRead">
+          <h2 id="popTitle">Community Discussions</h2>
+          <p>
+            <a class="topic" href="#">How to Cook Rice Wine...</a>
+            <br />
+          </p>
+          <p><a class="topic" href="#">How to Cook Rice Wine...</a> <br /></p>
+          <p>
+            <a class="topic" href="#">How to Cook Rice Wine...</a>
+            <br />
+          </p>
+          <p><a class="topic" href="#">How to Cook Rice Wine...</a> <br /></p>
         </article>
       </div>
       <footer>
@@ -78,7 +103,6 @@
       </footer>
     </main>
 
-    <script src="/js/fontLoader.js" defer></script>
     <script src="./js/menuToggle.js" defer></script>
     <script src="./js/scripts.js" defer></script>
     <script src="./js/towns.js"></script>
