@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/minified/normalize.minify.css" />
+    <link rel="stylesheet" href="./css/minified/small.minify.css" />
+    <link rel="stylesheet" href="./css/minified/medium.minify.css" />
+    <link rel="stylesheet" href="./css/minified/large.minify.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <picture>
+        <img id="logo" src="./images/weathergeared-resize.png" alt="logo" />
+      </picture>
+      <section>
+        <h1>Weather Geared</h1>
+        <span>
+          dont just be geared, be weather geared for whatever the weather
+          brings.
+        </span>
+      </section>
+    </header>
+    <nav class="clearfix">
+      <button onclick="toggleMenu()">&#9776; Menu</button>
+      <ul id="primaryNav" class="hide">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Articles</a></li>
+        <li><a href="./stormcenter.htm">Report a Storm</a></li>
+        <li><a class="active" href="./gallery-7.htm">Gallery</a></li>
+      </ul>
+    </nav>
+    <main class="gallery">
+      <figure class="box">
+        <img
+          src="./images/placeholder-png.png"
+          data-src="http://placekitten.com/300/400"
+          alt="Placeholders"
+        />
+        <figcaption>This is a nice caption!</figcaption>
+      </figure>
+
+      <figure class="box">
+        <img
+          src="./images/placeholder-png.png"
+          data-src="http://placekitten.com/300/400"
+          alt="Placeholders"
+        />
+        <figcaption>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis nam,
+          est perspiciatis repudiandae!
+        </figcaption>
+      </figure>
+
+      <figure class="box">
+        <img
+          src="./images/placeholder-png.png"
+          data-src="http://placekitten.com/300/400"
+          alt="Placeholders"
+        />
+        <figcaption>Lorem ipsum dolor sit!</figcaption>
+      </figure>
+
+      <figure class="box">
+        <img
+          src="./images/placeholder-png.png"
+          data-src="http://placekitten.com/300/400"
+          alt="Placeholders"
+        />
+        <figcaption>Lorem ipsum dolor sit amet.</figcaption>
+      </figure>
+
+      <figure class="box">
+        <img
+          src="./images/placeholder-png.png"
+          data-src="//unsplash.it/300/400"
+          alt="Placeholders"
+        />
+        <figcaption>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium?!
+        </figcaption>
+      </figure>
+
+      <figure class="box">
+        <img
+          src="./images/placeholder-png.png"
+          data-src="//unsplash.it/300/400"
+          alt="Placeholders"
+        />
+        <figcaption>This is a nice caption!</figcaption>
+      </figure>
+
+      <figure class="box">
+        <img
+          src="./images/placeholder-png.png"
+          data-src="//unsplash.it/300/400"
+          alt="Placeholders"
+        />
+        <figcaption>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse,
+          dolores.
+        </figcaption>
+      </figure>
+
+      <figure class="box">
+        <img
+          src="./images/placeholder-png.png"
+          data-src="//unsplash.it/300/400"
+          alt="Placeholders"
+        />
+        <figcaption>This is a nice caption!</figcaption>
+      </figure>
+
+      <figure class="box">
+        <img
+          src="./images/placeholder-png.png"
+          data-src="//unsplash.it/300/400"
+          alt="Placeholders"
+        />
+        <figcaption>This is a nice caption!</figcaption>
+      </figure>
+    </main>
+    <footer>
+      © <span id="year"></span> | Austin Donovan | Utah |
+      <a
+        id="byuLink"
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://byui.edu"
+        >BYUI Online Learning</a
+      >
+      <br />
+      Last updated: <date></date>
+    </footer>
+    <script src="./js/aside.js" defer></script>
+    <script src="./js/date.js" defer></script>
+    <script src="./js/lazyloading.js" defer></script>
+    <script src="./js/menuToggle.js" defer></script>
+  </body>
+</html>

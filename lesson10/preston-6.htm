@@ -1,0 +1,194 @@
+w<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script> -->
+    <script
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAlbH2Sz5FSFRJQJXcmn_PkuAR3TXCkWZw&callback=initMap"
+    ></script>
+    <link rel="shortcut icon" href="/images/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <!-- <link rel="stylesheet" href="./css/normalize.minify.css" /> -->
+    <link rel="stylesheet" href="./css/minified/small.minify.css" />
+    <link rel="stylesheet" href="./css/minified/medium.minify.css" />
+    <link rel="stylesheet" href="./css/minified/large.minify.css" />
+    <title>Preston Idaho</title>
+  </head>
+  <body>
+    <aside id="aside">
+      <p>
+        Saturday is Preston Pancake in the park day! Every Morning, 9:00AM in
+        the preston park, get free warm pancakes(no waffles included.)
+      </p>
+    </aside>
+    <header>
+      <picture>
+        <img id="logo" src="./images/weathergeared-resize.png" alt="logo" />
+      </picture>
+      <section>
+        <h1>Weather Geared</h1>
+        <span>
+          dont just be geared, be weather geared for whatever the weather
+          brings.
+        </span>
+      </section>
+    </header>
+    <nav class="clearfix">
+      <button onclick="toggleMenu()">&#9776; Menu</button>
+      <ul id="primaryNav" class="hide">
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="#">Articles</a></li>
+        <li><a href="./stormcenter.htm">Report a Storm</a></li>
+        <li><a href="./gallery-7.htm">Gallery</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h2 class="titleHeader">Preston Idaho</h2>
+      <div class="herodiv">
+        <picture>
+          <source
+            srcset="./images/hero-image/scene-large-1060.jpg"
+            media="(min-width: 1060px)"
+          />
+          <source
+            srcset="./images/hero-image/scene-medium500.jpg"
+            media="(min-width: 810px)"
+          />
+          <img src="./images/hero-image/scene-small450w.jpg" alt="background" />
+        </picture>
+        <section class="stats">
+          <h2>Weather summary</h2>
+          <p>Currently: <span>Sunny</span></p>
+          <p>
+            Tempature:
+            <span id="temp" onmouseover="hoverEffect(this)">51</span> °F
+          </p>
+          <p>Wind Chill: <span id="windChill">N/A</span> °F</p>
+          <p>Humidity: <span>69%</span></p>
+          <p>Wind Speed: <span id="windSpeed">12</span> mph</p>
+        </section>
+      </div>
+      <h2 id="forcastTitle">5 Day Forcast</h2>
+      <div class="flex">
+        <div class="flex-col">
+          <span class="col-head">Tueday</span>
+          <img
+            class="weatherIcon"
+            src="./images/weather_icons/cloudy.png"
+            alt="cloudy"
+          />
+          <span class="data">34°F</span>
+        </div>
+        <div class="flex-col">
+          <span class="col-head">Wednesday</span>
+          <img
+            class="weatherIcon"
+            src="./images/weather_icons/cloudy.png"
+            alt="cloudy"
+          />
+          <span class="data">44°F</span>
+        </div>
+        <div class="flex-col">
+          <span class="col-head">Thursday</span>
+          <img
+            class="weatherIcon"
+            src="./images/weather_icons/cloudysun.png"
+            alt="sunny_cloud"
+          />
+          <span class="data">38°F</span>
+        </div>
+        <div class="flex-col">
+          <span class="col-head">Friday</span>
+          <img
+            class="weatherIcon"
+            src="./images/weather_icons/snowy.png"
+            alt="snowy"
+          />
+          <span class="data">25°F</span>
+        </div>
+        <div class="flex-col">
+          <span class="col-head">Saturday</span>
+          <img
+            class="weatherIcon"
+            src="./images/weather_icons/snowy.png"
+            alt="sunny"
+          />
+          <span class="data">54°F</span>
+        </div>
+      </div>
+
+      <div class="contentBox">
+        <picture>
+          <source
+            srcset="./images/picnic/picnic-large.jpg"
+            media="(min-width: 960px)"
+          />
+          <source
+            srcset="./images/picnic/picnic-med.jpg"
+            media="(min-width: 610px)"
+          />
+          <img src="./images/picnic/picnic-small.jpg" alt="picnic image" />
+        </picture>
+
+        <h2 id="articleTitle">Preston best picnic location</h2>
+        <h3 class="articleTitle">By Judy Roulding</h3>
+        <p id="articleBody">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore
+          voluptatibus beatae iure placeat amet, deserunt eum reprehenderit
+          consequuntur, fugiat modi obcaecati animi! Eligendi corrupti provident
+          eveniet laborum ad architecto corporis eaque quod. Reiciendis
+          accusamus suscipit nam minima ex commodi laudantium quisquam beatae
+          blanditiis, at quaerat harum ullam eligendi corporis voluptates quod
+          debitis. Ipsum vitae laboriosam corporis in architecto dignissimos
+          suscipit! <br />
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
+          asperiores dicta nulla architecto quas provident quae cupiditate error
+          eligendi laborum? Iusto temporibus ad perspiciatis laboriosam ipsum
+          blanditiis, recusandae inventore molestiae est vel beatae natus aut,
+          omnis veritatis autem nulla facilis quis accusamus modi consequuntur.
+          Optio dolorem corporis accusantium laudantium.
+        </p>
+      </div>
+
+      <div class="mapContent">
+        <div id="map"></div>
+        <section id="mapLoco">
+          <h3>Weather Geared Site</h3>
+          <p>301 N 1st E</p>
+          <p>Preston, ID, 83263</p>
+          <br />
+          <p>&#128222; 999.999.9999</p>
+          <p>&#128233; weathergear</p>
+        </section>
+      </div>
+      <a id="portalBtn" href="https://iskarr.github.io/austindonovan.github.io/"
+        >Back to portal</a
+      >
+    </main>
+    <footer>
+      © <span id="year"></span> | Austin Donovan | Utah |
+      <a
+        id="byuLink"
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://byui.edu"
+        >BYUI Online Learning</a
+      >
+      <br />
+      Last updated: <date></date>
+    </footer>
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"
+      defer
+    ></script>
+    <script src="/js/fontLoader.js" defer></script>
+    <script src="./js/menuToggle.js" defer></script>
+    <script src="./js/windChill.js" defer></script>
+    <script src="./js/scripts.js" defer></script>
+  </body>
+</html>
