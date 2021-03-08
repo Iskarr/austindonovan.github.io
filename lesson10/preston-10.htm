@@ -4,10 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script> -->
-    <script
-      defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAlbH2Sz5FSFRJQJXcmn_PkuAR3TXCkWZw&callback=initMap"
-    ></script>
     <link rel="shortcut icon" href="/images/favicon.ico" />
     <link
       rel="stylesheet"
@@ -63,14 +59,14 @@
         </picture>
         <section class="stats">
           <h2>Weather summary</h2>
-          <p>Currently: <span>Sunny</span></p>
+          <p>Currently: <span id="current-desc"></span></p>
           <p>
             Tempature:
-            <span id="temp" onmouseover="hoverEffect(this)">51</span> °F
+            <span id="current-temp" onmouseover="hoverEffect(this)"></span> °F
           </p>
-          <p>Wind Chill: <span id="windChill">N/A</span> °F</p>
-          <p>Humidity: <span>69%</span></p>
-          <p>Wind Speed: <span id="windSpeed">12</span> mph</p>
+          <p>Wind Chill: <span id="current-windChill"></span> °F</p>
+          <p>Humidity: <span id="current-humid"></span>%</p>
+          <p>Wind Speed: <span id="current-windSpeed"></span> mph</p>
         </section>
       </div>
       <h2 id="forcastTitle">5 Day Forcast</h2>
@@ -186,10 +182,11 @@
       src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"
       defer
     ></script>
+    <script src="./js/fiveday.js"></script>
+    <script src="./js/aside.js" defer></script>
     <script src="./js/weatherApi.js" defer></script>
     <script src="/js/fontLoader.js" defer></script>
     <script src="./js/menuToggle.js" defer></script>
-    <script src="./js/windChill.js" defer></script>
     <script src="./js/scripts.js" defer></script>
   </body>
 </html>
