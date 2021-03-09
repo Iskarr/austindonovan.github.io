@@ -40,6 +40,30 @@ fetch(forecastURL)
     let iconURL5 = "http://openweathermap.org/img/w/" + dayFiveIcon + ".png";
     document.getElementById("fifthIcon").setAttribute("src", iconURL5);
 
+    // sets the day of the weeks for the five day forcast
+    function getDayName(dateStr, locale) {
+      let date = new Date(dateStr);
+      return date.toLocaleDateString(locale, { weekday: "long" });
+    }
+
+    let dateStr = jsObject.list[4].dt_txt;
+    let dateStr2 = jsObject.list[12].dt_txt;
+    let dateStr3 = jsObject.list[20].dt_txt;
+    let dateStr4 = jsObject.list[28].dt_txt;
+    let dateStr5 = jsObject.list[36].dt_txt;
+
+    let day1 = getDayName(dateStr, "en-EN");
+    let day2 = getDayName(dateStr2, "en-EN");
+    let day3 = getDayName(dateStr3, "en-EN");
+    let day4 = getDayName(dateStr4, "en-EN");
+    let day5 = getDayName(dateStr5, "en-EN");
+
+    document.getElementById("dayTitle1").textContent = day1;
+    document.getElementById("dayTitle2").textContent = day2;
+    document.getElementById("dayTitle3").textContent = day3;
+    document.getElementById("dayTitle4").textContent = day4;
+    document.getElementById("dayTitle5").textContent = day5;
+
     // const imagesrc =
     //   "https://openweathermap.org/img/w/" + jsObject.weather[0].icon + ".png"; // note the concatenation
     // document.getElementById("imagesrc").textContent = imagesrc; // informational specification only
