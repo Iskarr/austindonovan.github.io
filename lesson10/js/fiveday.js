@@ -63,10 +63,4 @@ fetch(forecastURL)
     document.getElementById("dayTitle3").textContent = day3;
     document.getElementById("dayTitle4").textContent = day4;
     document.getElementById("dayTitle5").textContent = day5;
-
-    // const imagesrc =
-    //   "https://openweathermap.org/img/w/" + jsObject.weather[0].icon + ".png"; // note the concatenation
-    // document.getElementById("imagesrc").textContent = imagesrc; // informational specification only
-    // document.getElementById("icon").setAttribute("src", imagesrc); // focus on the setAttribute() method
-    // document.getElementById("icon").setAttribute("alt", desc);
   });

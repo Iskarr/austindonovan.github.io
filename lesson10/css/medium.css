@@ -113,6 +113,11 @@
     flex: 1 1 auto;
     background-color: #2561a0;
   }
+
+  div.flex-col p {
+    display: inline-flex;
+  }
+
   .flex-col,
   .column-col,
   .grid-col {
