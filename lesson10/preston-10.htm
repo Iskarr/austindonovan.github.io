@@ -48,21 +48,24 @@
       <div class="herodiv">
         <picture>
           <source
-            srcset="./images/hero-image/scene-large-1060.jpg"
+            srcset="./images/hero-image/preston/prestonLG.jpg"
             media="(min-width: 1060px)"
           />
           <source
-            srcset="./images/hero-image/scene-medium500.jpg"
+            srcset="./images/hero-image/preston/prestonMD.jpg"
             media="(min-width: 810px)"
           />
-          <img src="./images/hero-image/scene-small450w.jpg" alt="background" />
+          <img
+            src="./images/hero-image/preston/prestonSM.jpg"
+            alt="background"
+          />
         </picture>
         <section class="stats">
           <h2>Weather summary</h2>
           <p>Currently: <span id="current-desc"></span></p>
           <p>
             Tempature:
-            <span id="current-temp" onmouseover="hoverEffect(this)"></span> °F
+            <span id="current-temp"></span> °F
           </p>
           <p>Wind Chill: <span id="current-windChill"></span> °F</p>
           <p>Humidity: <span id="current-humid"></span>%</p>
@@ -204,7 +207,7 @@
       src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"
       defer
     ></script>
-    <script src="./js/fiveday.js" defer></script>
+    <script src="./js/preston-api.js" defer></script>
     <script src="./js/aside.js" defer></script>
     <script src="./js/weatherApi.js" defer></script>
     <script src="/js/fontLoader.js" defer></script>

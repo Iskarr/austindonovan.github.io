@@ -4,14 +4,14 @@ const forecastURL =
 fetch(forecastURL)
   .then((response) => response.json())
   .then((jsObject) => {
-    // console.log(jsObject);
+    //   console.log(jsObject);
 
     // gets the five upcoming days of weather
-    let dayOne = jsObject.list[4].main.temp;
-    let dayTwo = jsObject.list[12].main.temp;
-    let dayThree = jsObject.list[20].main.temp;
-    let dayFour = jsObject.list[28].main.temp;
-    let dayFive = jsObject.list[36].main.temp;
+    let dayOne = Math.floor(jsObject.list[4].main.temp);
+    let dayTwo = Math.floor(jsObject.list[12].main.temp);
+    let dayThree = Math.floor(jsObject.list[20].main.temp);
+    let dayFour = Math.floor(jsObject.list[28].main.temp);
+    let dayFive = Math.floor(jsObject.list[36].main.temp);
 
     // sets the weather to a date
     document.getElementById("data1").innerHTML = dayOne;

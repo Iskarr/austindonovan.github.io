@@ -5,7 +5,7 @@ fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
     //   console.log(jsObject);
-    document.getElementById("current-temp").textContent = jsObject.main.temp;
+
     document.getElementById("current-humid").textContent =
       jsObject.main.humidity;
     document.getElementById("current-windSpeed").textContent =
@@ -14,10 +14,13 @@ fetch(apiURL)
     document.getElementById("current-desc").textContent = descrip;
 
     // handles the wind chill factor
-    let T = (document.getElementById("current-temp").textContent =
-      jsObject.main.temp);
-    let W = (document.getElementById("current-windSpeed").textContent =
-      jsObject.wind.speed);
+    let T = (document.getElementById("current-temp").textContent = Math.floor(
+      jsObject.main.temp
+    ));
+
+    let W = (document.getElementById(
+      "current-windSpeed"
+    ).textContent = Math.ceil(jsObject.wind.speed));
     const wc = 35.74 + 0.6215 * T - 35.75 * W ** 0.16 + 0.4275 * T * W ** 0.16;
     // console.log(wc);
     document.getElementById("current-windChill").textContent = Math.floor(wc);
