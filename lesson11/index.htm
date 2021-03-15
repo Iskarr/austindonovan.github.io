@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/images/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/community/small.css" />
+    <link rel="stylesheet" href="./css/community/large.css" />
+
+    <title>Weather Community</title>
+  </head>
+  <body>
+    <header>
+      <picture>
+        <img
+          id="logo"
+          loading="lazy"
+          src="./images/weathergeared-resize.png"
+          alt="logo"
+        />
+      </picture>
+      <section>
+        <h1>Weather Geared Community</h1>
+        <span>
+          dont just be geared, be weather geared for whatever the weather
+          brings.
+        </span>
+      </section>
+    </header>
+
+    <nav class="clearfix">
+      <button onclick="toggleMenu()">&#9776; Menu</button>
+      <ul id="primaryNav" class="hide">
+        <li><a href="./preston-10.htm">Home</a></li>
+        <li><a class="active" href="#">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="./stormcenter.htm">Storm Center</a></li>
+        <li><a href="./gallery-7.htm">Gallery</a></li>
+      </ul>
+    </nav>
+    <main>
+      <div class="grid">
+        <article class="sidebar-left">
+          <h2>Event of the Day</h2>
+          <h3>Rock Climbing up Mt. Preston</h3>
+          <img src="./fishhaven.jpg" alt="mt Preston" loading="lazy" />
+          <p>
+            Rock Climbing this week is our event of the week. If you plan to
+            climb Mt. Preston, come join the discussion and
+            <a class="linkToHero" href="#">join here</a>
+          </p>
+        </article>
+        <article class="heroArticle">
+          <h2>Hero of the Week</h2>
+          <h3>Felicia faux</h3>
+          <img
+            src="./images/felicia-resize.jpg"
+            alt="heroImage"
+            loading="lazy"
+          />
+          <p>
+            Felicia is our hero of the day! After a long day at work, and a full
+            time school schedule, she makes time in her week to go and help at a
+            local soup kitchen to provide for those who need it most!
+            <a class="linkToHero" href="#"> Here </a>
+          </p>
+        </article>
+        <article class="popularRead">
+          <h2 id="popTitle">Community Discussions</h2>
+          <p>
+            <a class="topic" href="#">How to Cook Rice Wine...</a>
+            <br />
+          </p>
+          <p><a class="topic" href="#">How to Cook Rice Wine...</a> <br /></p>
+          <p>
+            <a class="topic" href="#">How to Cook Rice Wine...</a>
+            <br />
+          </p>
+          <p><a class="topic" href="#">How to Cook Rice Wine...</a> <br /></p>
+        </article>
+      </div>
+      <footer>
+        © <span id="year"></span> | Austin Donovan | Utah |
+        <a
+          id="byuLink"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://byui.edu"
+          >BYUI Online Learning</a
+        >
+        <br />
+        Last updated: <date></date>
+      </footer>
+    </main>
+
+    <script src="./js/menuToggle.js" defer></script>
+    <script src="./js/scripts.js" defer></script>
+    <script src="./js/towns.js"></script>
+  </body>
+</html>

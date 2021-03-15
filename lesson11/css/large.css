@@ -1,0 +1,321 @@
+@media only screen and (min-width: 64rem) {
+  nav {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,1e5799+0,04bfbf+0,0388a6+100 */
+    background: #1e5799; /* Old browsers */
+    background: -moz-linear-gradient(
+      top,
+      #1e5799 0%,
+      #1e5799 0%,
+      #04bfbf 0%,
+      #0388a6 100%
+    ); /* FF3.6-15 */
+    background: -webkit-linear-gradient(
+      top,
+      #1e5799 0%,
+      #1e5799 0%,
+      #04bfbf 0%,
+      #0388a6 100%
+    ); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(
+      to bottom,
+      #1e5799 0%,
+      #1e5799 0%,
+      #04bfbf 0%,
+      #0388a6 100%
+    ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#0388a6',GradientType=0 ); /* IE6-9 */
+  }
+
+  #logo {
+    margin-top: 1rem;
+    max-width: 156px;
+    max-height: 156px;
+  }
+
+  nav button {
+    display: none;
+  }
+
+  nav ul {
+    margin-left: 2%;
+  }
+
+  nav ul li a {
+    border: none;
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 0.6rem 1rem;
+    float: left;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    width: 16.65%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+    text-align: center;
+  }
+
+  nav ul.hide {
+    display: block;
+  }
+
+  body {
+    font-size: 1.1rem;
+  }
+
+  /* image and aside */
+  #town {
+    width: 58rem;
+    max-height: 450px;
+  }
+  .herodiv {
+    margin: 10px auto;
+    position: relative;
+  }
+  h1,
+  h2,
+  p {
+    margin: 0;
+  }
+
+  .stats {
+    position: absolute;
+    top: 30px;
+    left: 6rem;
+    background: radial-gradient(#eee, #4567aa);
+    border: 1px solid #0388a6;
+    padding: 1.5rem;
+    box-shadow: 0 0 30px #111;
+    opacity: 0.8;
+  }
+
+  aside {
+    background-color: #f2e205;
+    padding: 1.2rem;
+  }
+  aside p {
+    text-align: center;
+    font-size: 1.2em;
+  }
+
+  .flex {
+    display: flex;
+    /* flex-direction: row; */
+    /* let us combine row and wrap with flow */
+    flex-flow: row wrap;
+    margin: 1rem;
+  }
+
+  #forcastTitle {
+    display: block;
+  }
+
+  .flex-col {
+    flex: 1 1 auto;
+    background-color: #2561a0;
+  }
+  .flex-col,
+  .column-col,
+  .grid-col {
+    border-bottom: 1px solid #333;
+    border-left: 1px solid #333;
+    text-align: center;
+  }
+
+  .flex,
+  .column,
+  .grid {
+    border-right: 1px solid #333;
+  }
+
+  .col-head {
+    display: block;
+    padding: 5px;
+    border-bottom: 1px solid #333;
+    text-align: center;
+  }
+
+  .data {
+    display: block;
+    padding: 0 5px 5px;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .col-head,
+  th {
+    font-weight: 700;
+    font-size: 1rem;
+    background-color: #0388a6;
+    color: white;
+  }
+
+  /* Article CSS */
+
+  #articleImage {
+    width: 50rem;
+    height: 400px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  #articleTitle {
+    font-size: 1.5em;
+    color: #444;
+  }
+  .articleTitle {
+    font-size: 1em;
+    color: #1e5799;
+  }
+  #articleBody {
+    text-align: left;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 1em;
+    color: #111;
+    font-style: normal;
+  }
+
+  #articleBody::first-letter {
+    font-weight: bold;
+    font-size: 2.4em;
+    padding-right: 6px;
+  }
+
+  /* Contact section */
+  #map {
+    position: relative;
+    height: 400px;
+    width: 50%;
+    margin-right: 150px;
+  }
+
+  #mapLoco {
+    padding: 1rem;
+    font-size: 1.2em;
+    text-align: center;
+  }
+
+  /* Gallery CSS */
+
+  .box img[data-src] {
+    filter: blur(0.2em);
+  }
+  .box img {
+    filter: blur(0em);
+    transition: filter 1.5s;
+  }
+
+  .box {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+    padding: 3%;
+    background-color: #0388a6;
+  }
+
+  .box:hover {
+    box-shadow: 8px 16px 16px 0 rgba(0, 0, 0, 0.3);
+  }
+
+  .container {
+    background-color: #0388a6;
+  }
+
+  .gallery {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  figure {
+    margin: 10px;
+    width: 300px;
+    height: 450px;
+    margin-bottom: 1rem;
+  }
+
+  figure img,
+  figcaption {
+    width: 100%;
+  }
+
+  /*----------- FORM --------------*/
+
+  form fieldset {
+    display: inline-block;
+  }
+
+  input:required:valid {
+    border-color: green;
+    border-left: green solid 6px;
+  }
+  input:invalid {
+    border-color: red;
+    border-left: red solid 6px;
+  }
+
+  .bo {
+    padding: 8px 16px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  form fieldset {
+    text-align: center;
+    margin: 2rem 0;
+    border: 1px solid #445ba9;
+    border-radius: 10px;
+    padding: 0.5rem 2%;
+    width: 90%;
+  }
+
+  form legend {
+    color: #445ba9;
+    margin: 0 1rem;
+    padding: 0 0.5rem;
+  }
+
+  form label.top,
+  form div {
+    display: block;
+    padding-top: 1rem;
+    color: #9c2c13;
+    font-size: 1rem;
+  }
+
+  form label.top input,
+  form label.top select {
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: 0.75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  form label.sbs {
+    display: block;
+    padding: 0.75rem 0;
+    color: #555;
+  }
+
+  form input.submitBtn {
+    border: none;
+    background-color: #9c2c13;
+    color: white;
+    border-radius: 1rem;
+    padding: 0.75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+  }
+
+  form label.top input:required {
+    border-left: red solid 6px;
+  }
+  form label.top input:required:valid {
+    border-left: green solid 6px;
+  }
+}
