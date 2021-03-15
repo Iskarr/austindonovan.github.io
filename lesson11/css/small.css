@@ -173,10 +173,7 @@ nav button {
   width: 428px;
   max-height: 400px;
 }
-.herodiv {
-  margin: 10px auto;
-  position: relative;
-}
+
 h1,
 h2,
 p {
@@ -185,8 +182,8 @@ p {
 
 .stats {
   position: absolute;
-  top: 30px;
-  left: 50px;
+  top: 230px;
+  left: 150px;
   background: radial-gradient(#eee, #4567aa);
   border: 1px solid #0388a6;
   padding: 1.4rem;
@@ -268,7 +265,7 @@ th {
 }
 
 /* Article CSS */
-#articleImage {
+/* #articleImage {
   width: 25rem;
   height: 250px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -293,7 +290,7 @@ th {
   font-weight: bold;
   font-size: 2.4em;
   padding-right: 6px;
-}
+} */
 
 #map {
   position: relative;
@@ -426,4 +423,33 @@ form input.submitBtn {
   margin: 0 0 2rem 2%;
   width: 96%;
   max-width: 20rem;
+}
+
+div.grid {
+  display: grid;
+  grid-template-columns: stretch;
+}
+
+article.mainTowns {
+  margin-top: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+  background-color: #0388a6;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 0;
+  margin: 8px 12px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  overflow: hidden;
+  height: 28rem;
+}
+
+article h3 {
+  text-align: center;
+}
+
+article.mainTowns img {
+  width: 90%;
+  height: 75%;
 }

@@ -294,3 +294,33 @@ th {
   background-color: #0388a6;
   color: white;
 }
+
+/* main towns */
+.mainTowns {
+  font-style: italic;
+  font-size: 1.1em;
+}
+
+#popTitle {
+  margin-left: 5%;
+  border-bottom: #fff 4px solid;
+  width: 90%;
+  text-align: center;
+}
+
+.popularRead {
+  text-align: center;
+}
+
+.topic {
+  color: #fff;
+  font-size: 1.2em;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+
+  padding-top: 1rem;
+}
+
+.sidebar-left p {
+  font-size: 1.2em;
+}

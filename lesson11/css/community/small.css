@@ -227,3 +227,61 @@ section {
 .sidebar-left p {
   font-size: 1.2em;
 }
+
+/* five day forcast */
+
+.flex {
+  display: none;
+  /* flex-direction: row; */
+  /* let us combine row and wrap with flow */
+  flex-flow: row wrap;
+}
+
+#forcastTitle {
+  display: none;
+}
+
+main h2 {
+  color: #1e5799;
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+.flex-col {
+  flex: 1 1 auto;
+  background-color: #2561a0;
+}
+.flex-col,
+.column-col,
+.grid-col {
+  border-bottom: 1px solid #333;
+  border-left: 1px solid #333;
+}
+
+.flex,
+.column,
+.grid {
+  border-right: 1px solid #333;
+}
+
+.col-head {
+  display: block;
+  padding: 5px;
+  border-bottom: 1px solid #333;
+  text-align: center;
+}
+
+.data {
+  display: block;
+  padding: 0 5px 5px;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.col-head,
+th {
+  font-weight: 700;
+  font-size: 1rem;
+  background-color: #0388a6;
+  color: white;
+}

@@ -1,0 +1,19 @@
+div.grid {
+  display: block;
+  margin-top: 10px;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 30%);
+  transition: 0.3s;
+  background-color: #0388a6;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 0;
+  margin: 8px 12px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  overflow: hidden;
+  height: 28rem;
+}
+
+div.grid img {
+  max-width: 20rem;
+}

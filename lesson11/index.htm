@@ -10,6 +10,9 @@
     />
     <link rel="stylesheet" href="./css/small.css" />
     <link rel="stylesheet" href="./css/large.css" />
+    <!-- <link rel="stylesheet" href="./css/community/small.css" />
+    <link rel="stylesheet" href="./css/community/large.css" /> -->
+
     <title>Preston Idaho</title>
   </head>
   <body>
@@ -44,7 +47,7 @@
     </nav>
     <main>
       <h2 class="titleHeader">Preston Idaho</h2>
-      <div class="herodiv">
+      <article class="herodiv">
         <picture>
           <source
             srcset="./images/hero-image/preston/prestonLG.jpg"
@@ -70,7 +73,7 @@
           <p>Humidity: <span id="current-humid"></span>%</p>
           <p>Wind Speed: <span id="current-windSpeed"></span> mph</p>
         </section>
-      </div>
+      </article>
       <h2 id="forcastTitle">5 Day Forcast</h2>
       <div class="flex">
         <div class="flex-col">
@@ -139,7 +142,7 @@
           </div>
         </div>
       </div>
-
+      <!-- 
       <div class="contentBox">
         <picture>
           <source
@@ -152,7 +155,6 @@
           />
           <img src="./images/picnic/picnic-small.jpg" alt="picnic image" />
         </picture>
-
         <h2 id="articleTitle">Preston best picnic location</h2>
         <h3 class="articleTitle">By Judy Roulding</h3>
         <p id="articleBody">
@@ -171,10 +173,9 @@
           omnis veritatis autem nulla facilis quis accusamus modi consequuntur.
           Optio dolorem corporis accusantium laudantium.
         </p>
-      </div>
+      </div> -->
 
-      <div class="cards"></div>
-
+      <div class="grid"></div>
       <div class="mapContent">
         <div id="map"></div>
         <section id="mapLoco">
@@ -206,6 +207,7 @@
       src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"
       defer
     ></script>
+    <script src="./js/towns.js"></script>
     <script src="./js/preston-api.js" defer></script>
     <script src="./js/aside.js" defer></script>
     <script src="./js/weatherApi.js" defer></script>
