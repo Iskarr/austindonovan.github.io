@@ -63,7 +63,7 @@
     height: 32rem;
   }
 
-  .stats {
+  #stats {
     position: absolute;
     top: 465px;
     left: 105px;

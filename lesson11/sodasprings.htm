@@ -47,10 +47,10 @@
     <main>
       <div class="grid">
         <article class="sidebar-left">
-          <h2>Fish Haven Event of the Day</h2>
-          <h3>Rock Climbing up Mt. Preston</h3>
+          <h2>Preston Events</h2>
+          <h3 id="comingEvent">Rock Climbing up Mt. Preston</h3>
           <img src="./fishhaven.jpg" alt="mt Preston" loading="lazy" />
-          <section class="stats">
+          <section id="stats">
             <h2>Weather summary</h2>
             <p>Currently: <span id="current-desc"></span></p>
             <p>
@@ -137,6 +137,8 @@
             </div>
           </div>
         </article>
+
+        <div class="grid"></div>
         <article class="heroArticle">
           <h2>Hero of the Week</h2>
           <h3>Felicia faux</h3>
@@ -158,12 +160,16 @@
             <a class="topic" href="#">How to Cook Rice Wine...</a>
             <br />
           </p>
-          <p><a class="topic" href="#">How to Cook Rice Wine...</a> <br /></p>
           <p>
-            <a class="topic" href="#">How to Cook Rice Wine...</a>
+            <a class="topic" href="#">How to Cook Orange Chicken...</a> <br />
+          </p>
+          <p>
+            <a class="topic" href="#">How to Make Fudge...</a>
             <br />
           </p>
-          <p><a class="topic" href="#">How to Cook Rice Wine...</a> <br /></p>
+          <p>
+            <a class="topic" href="#">How to Cook Christmas Ham...</a> <br />
+          </p>
         </article>
       </div>
       <footer>
@@ -185,6 +191,7 @@
     ></script>
     <script src="./js/fishhaven/fishhaven.js" defer></script>
     <script src="./js/fishhaven/fish-main.js" defer></script>
+    <script src="./js/fishhaven/town-data.js" defer></script>
     <script src="./js/aside.js" defer></script>
     <script src="/js/fontLoader.js" defer></script>
     <script src="./js/menuToggle.js" defer></script>

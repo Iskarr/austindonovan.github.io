@@ -179,7 +179,7 @@ section {
   max-width: 20rem;
 }
 
-.stats {
+#stats {
   position: absolute;
   top: 355px;
   left: 40px;
