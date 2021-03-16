@@ -7,8 +7,7 @@ fetch(townURL)
     const preston = jsObject;
     // console.log(preston);
 
-    document.getElementById("comingEvent").innerHTML =
-      preston.towns[6].events[0];
+    document.getElementById("comingEvent").innerHTML = preston.towns[6].motto;
 
     for (let i = 0; i < preston.towns[6].events.length; i++) {
       //console.log(preston.towns[6].events.length);

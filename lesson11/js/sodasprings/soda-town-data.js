@@ -5,12 +5,11 @@ fetch(townURL)
   .then((jsObject) => {
     //console.log(jsObject);
     const preston = jsObject;
-    // console.log(preston);
+    console.log(preston);
 
-    document.getElementById("comingEvent").innerHTML =
-      preston.towns[6].events[0];
+    document.getElementById("comingEvent").innerHTML = preston.towns[0].motto;
 
-    for (let i = 0; i < preston.towns[6].events.length; i++) {
+    for (let i = 0; i < preston.towns[0].events.length; i++) {
       //console.log(preston.towns[6].events.length);
       // creates the elements to render
       let card = document.createElement("article");
@@ -18,11 +17,11 @@ fetch(townURL)
       let h3 = document.createElement("h3");
       let image = document.createElement("img");
 
-      h2.textContent = preston.towns[6].name + " Event:";
-      h3.textContent = preston.towns[6].events[i];
+      h2.textContent = preston.towns[0].name + " Event:";
+      h3.textContent = preston.towns[0].events[i];
       image.setAttribute("loading", "lazy");
-      image.setAttribute("src", preston.towns[6].photo);
-      image.setAttribute("alt", preston.towns[6].name);
+      image.setAttribute("src", preston.towns[0].photo);
+      image.setAttribute("alt", preston.towns[0].name);
 
       // allows the dates to show
       card.appendChild(h2);
