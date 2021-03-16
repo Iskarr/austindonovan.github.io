@@ -5,9 +5,9 @@ fetch(requestURL)
     return response.json();
   })
   .then(function (jsonObject) {
-    //console.table(jsonObject); // temporary checking for valid response and data parsing
+    // console.table(jsonObject); // temporary checking for valid response and data parsing
     const towns = jsonObject["towns"];
-    const mainTowns = [towns[1], towns[5], towns[6]];
+    const mainTowns = [towns[0], towns[2], towns[6]];
 
     for (let i = 0; i < mainTowns.length; i++) {
       // creates card and places prophet name in h2 element

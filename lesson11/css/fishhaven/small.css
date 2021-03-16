@@ -230,29 +230,16 @@ section {
 
 /* five day forecast css */
 
-.weatherIcon {
-  width: 95px;
-  height: 75px;
-}
-
-.weatherIcon {
-  width: 95px;
-  height: 75px;
-}
-
-#forecastContainer {
-  display: none;
-  grid-column: 1 / 4;
-  grid-row: 2;
-  height: 100%;
-}
-
 .flex {
-  display: none;
+  display: flex;
   /* flex-direction: row; */
   /* let us combine row and wrap with flow */
   flex-flow: row wrap;
-  text-align: center;
+  margin: 1rem;
+}
+
+#forcastTitle {
+  display: block;
 }
 
 .flex-col {
@@ -264,6 +251,7 @@ section {
 .grid-col {
   border-bottom: 1px solid #333;
   border-left: 1px solid #333;
+  text-align: center;
 }
 
 .flex,
@@ -276,14 +264,13 @@ section {
   display: block;
   padding: 5px;
   border-bottom: 1px solid #333;
-  border-top: 1px solid #333;
   text-align: center;
 }
 
 .data {
   display: block;
   padding: 0 5px 5px;
-  font-size: 0.8rem;
+  font-size: 1rem;
   text-align: center;
 }
 
@@ -293,34 +280,4 @@ th {
   font-size: 1rem;
   background-color: #0388a6;
   color: white;
-}
-
-/* main towns */
-.mainTowns {
-  font-style: italic;
-  font-size: 1.1em;
-}
-
-#popTitle {
-  margin-left: 5%;
-  border-bottom: #fff 4px solid;
-  width: 90%;
-  text-align: center;
-}
-
-.popularRead {
-  text-align: center;
-}
-
-.topic {
-  color: #fff;
-  font-size: 1.2em;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
-
-  padding-top: 1rem;
-}
-
-.sidebar-left p {
-  font-size: 1.2em;
 }

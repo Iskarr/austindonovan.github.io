@@ -76,28 +76,16 @@
 
   /* five day forecast css */
 
-  .weatherIcon {
-    width: 95px;
-    height: 75px;
-  }
-
-  .weatherIcon {
-    width: 95px;
-    height: 75px;
-  }
-
-  #forecastContainer {
-    grid-column: 1 / 4;
-    grid-row: 2;
-    height: 100%;
-  }
-
   .flex {
     display: flex;
     /* flex-direction: row; */
     /* let us combine row and wrap with flow */
     flex-flow: row wrap;
-    text-align: center;
+    margin: 1rem;
+  }
+
+  #forcastTitle {
+    display: block;
   }
 
   .flex-col {
@@ -109,6 +97,7 @@
   .grid-col {
     border-bottom: 1px solid #333;
     border-left: 1px solid #333;
+    text-align: center;
   }
 
   .flex,
@@ -121,14 +110,13 @@
     display: block;
     padding: 5px;
     border-bottom: 1px solid #333;
-    border-top: 1px solid #333;
     text-align: center;
   }
 
   .data {
     display: block;
     padding: 0 5px 5px;
-    font-size: 0.8rem;
+    font-size: 1rem;
     text-align: center;
   }
 
