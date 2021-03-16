@@ -285,3 +285,23 @@ th {
   background-color: #0388a6;
   color: white;
 }
+
+.mapContent {
+  display: flex;
+  background-color: #ccc;
+  color: #444;
+  margin: 10px auto;
+  font-style: italic;
+  padding: 1rem;
+  border: 1px solid #000;
+  border-radius: 9px;
+}
+
+article.mainTowns img {
+  width: 95%;
+  height: 50%;
+}
+
+main {
+  text-align: center;
+}

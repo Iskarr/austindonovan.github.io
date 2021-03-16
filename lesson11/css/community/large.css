@@ -73,4 +73,21 @@
     opacity: 0.8;
     width: 18rem;
   }
+
+  #map {
+    position: relative;
+    height: 400px;
+    width: 50%;
+    margin-right: 150px;
+  }
+
+  #mapLoco {
+    padding: 1rem;
+    font-size: 1.2em;
+    text-align: center;
+  }
+
+  mapComtent {
+    border-radius: 10px;
+  }
 }
