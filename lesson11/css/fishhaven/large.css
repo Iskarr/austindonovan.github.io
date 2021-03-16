@@ -65,8 +65,8 @@
 
   .stats {
     position: absolute;
-    top: 425px;
-    left: 145px;
+    top: 465px;
+    left: 105px;
     background: radial-gradient(#eee, #4567aa);
     border: 1px solid #0388a6;
     box-shadow: 0 0 30px #111;

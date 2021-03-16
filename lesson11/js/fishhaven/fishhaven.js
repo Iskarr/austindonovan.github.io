@@ -5,7 +5,7 @@ const forecastURL = `https://api.openweathermap.org/data/2.5/forecast?id=${cityI
 fetch(forecastURL)
   .then((response) => response.json())
   .then((jsObject) => {
-    console.log(jsObject);
+    // console.log(jsObject);
     let day = 0;
     let weekDay = 0;
     let iconNum = 0;
