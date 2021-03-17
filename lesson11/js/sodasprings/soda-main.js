@@ -1,10 +1,10 @@
 const apiURL =
-  "https://api.openweathermap.org/data/2.5/weather?q=preston&appid=284bc15c1ef67f2d185f86a29c1373bd&units=imperial";
+  "https://api.openweathermap.org/data/2.5/weather?zip=83276,US&appid=284bc15c1ef67f2d185f86a29c1373bd&units=imperial";
 
 fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
-    //   console.log(jsObject);
+    console.log(jsObject);
 
     document.getElementById("current-humid").textContent =
       jsObject.main.humidity;
