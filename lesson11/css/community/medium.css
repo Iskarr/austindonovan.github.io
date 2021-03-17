@@ -4,8 +4,4 @@
     border-radius: 2%;
     height: 32rem;
   }
-
-  article {
-    grid-column: 1/4;
-  }
 }
