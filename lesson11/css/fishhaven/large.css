@@ -64,9 +64,10 @@
   }
 
   #stats {
+    overflow: auto;
     position: absolute;
-    top: 465px;
-    left: 105px;
+    top: 145px;
+    left: 65px;
     background: radial-gradient(#eee, #4567aa);
     border: 1px solid #0388a6;
     box-shadow: 0 0 30px #111;
@@ -74,7 +75,16 @@
     width: 18rem;
   }
 
+  .sidebar-left {
+    overflow: auto;
+    position: relative;
+  }
+
   /* five day forecast css */
+
+  article#forecastContainer {
+    display: block;
+  }
 
   .flex {
     display: flex;

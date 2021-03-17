@@ -81,4 +81,8 @@
     opacity: 0.8;
     width: 18rem;
   }
+
+  article#forecastContainer {
+    display: block;
+  }
 }

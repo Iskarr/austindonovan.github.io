@@ -169,6 +169,7 @@ img {
 }
 
 .sidebar-left {
+  overflow: auto;
   grid-column: 1 / 4;
   padding: 10px;
   height: 42rem;
@@ -179,9 +180,14 @@ section {
   max-width: 20rem;
 }
 
+article#forecastContainer {
+  display: none;
+}
+
 #stats {
+  overflow: auto;
   position: absolute;
-  top: 355px;
+  top: 455px;
   left: 40px;
   background: radial-gradient(#eee, #4567aa);
   border: 1px solid #0388a6;
