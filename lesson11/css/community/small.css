@@ -305,3 +305,26 @@ article.mainTowns img {
 main {
   text-align: center;
 }
+
+article.sidebar-left img {
+  display: block;
+  max-width: 64rem;
+  max-height: 500px;
+}
+
+article.sidebar-left p {
+  overflow: scroll;
+  position: relative;
+}
+
+#logo {
+  max-width: 230px;
+  max-height: 300px;
+  width: auto;
+  height: auto;
+}
+
+#headerTitle {
+  padding: 0;
+  margin: 0;
+}
