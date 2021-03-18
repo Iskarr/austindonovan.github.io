@@ -306,16 +306,17 @@ th {
 }
 
 /* Gallery CSS */
-
+/* 
 .box img[data-src] {
   filter: blur(0.2em);
 }
 .box img {
   filter: blur(0em);
   transition: filter 1.5s;
-}
+} */
 
 .box {
+  width: 20rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
   transition: 0.3s;
   padding: 3%;
@@ -348,6 +349,7 @@ figure {
 figure img,
 figcaption {
   width: 100%;
+  height: 325px;
 }
 /*----------- FORM --------------*/
 

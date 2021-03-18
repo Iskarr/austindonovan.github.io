@@ -27,7 +27,7 @@ if ("IntersectionObserver" in window) {
     });
   }, imgOptions);
 
-  // loops through each img and check sttus and load if necessary
+  // loops through each img and check status and load if necessary
   imagesToLoad.forEach((img) => {
     observer.observe(img);
   });
