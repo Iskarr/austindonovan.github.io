@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/images/favicon.ico" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/fishhaven/small.css" />
+    <link rel="stylesheet" href="./css/fishhaven/medium.css" />
+    <link rel="stylesheet" href="./css/fishhaven/large.css" />
+    <title>Soda Springs</title>
+  </head>
+  <body>
+    <aside id="aside">
+      <p>
+        Saturday is Preston Pancake in the park day! Every Morning, 9:00AM in
+        the preston park, get free warm pancakes(no waffles included.)
+      </p>
+    </aside>
+    <header>
+      <picture>
+        <img id="logo" src="./images/weathergeared-resize.png" alt="logo" />
+      </picture>
+      <section>
+        <h1>Weather Geared</h1>
+        <span>
+          dont just be geared, be weather geared for whatever the weather
+          brings.
+        </span>
+      </section>
+    </header>
+    <nav class="clearfix">
+      <button onclick="toggleMenu()">&#9776; Menu</button>
+      <ul id="primaryNav" class="hide">
+        <li><a href="./index.htm">Home</a></li>
+        <li><a href="./preston-10.htm">Preston</a></li>
+        <li><a class="active" href="./sodasprings.htm">Soda Springs</a></li>
+        <li><a href="./fishhaven.htm">Fish Haven</a></li>
+        <li><a href="./stormcenter.htm">Report a Storm</a></li>
+        <li><a href="./gallery-7.htm">Gallery</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="grid">
+        <article class="sidebar-left">
+          <h2>Soda Springs Event</h2>
+          <h3 id="comingEvent">Rock Climbing up Mt. Preston</h3>
+          <img src="./fishhaven.jpg" alt="mt Preston" loading="lazy" />
+          <section id="stats">
+            <h2>Weather summary</h2>
+            <p>Currently: <span id="current-desc"></span></p>
+            <p>
+              Tempature:
+              <span id="current-temp"></span> °F
+            </p>
+            <p>Wind Chill: <span id="current-windChill"></span> °F</p>
+            <p>Humidity: <span id="current-humid"></span>%</p>
+            <p>Wind Speed: <span id="current-windSpeed"></span> mph</p>
+          </section>
+          <p>
+            Rock Climbing this week is our event of the week. If you plan to
+            climb Mt. Preston, come join the discussion and
+            <a class="linkToHero" href="#">join here</a>
+          </p>
+        </article>
+        <article id="forecastContainer">
+          <h2 id="forcastTitle">5 Day Forcast</h2>
+          <div class="flex">
+            <div class="flex-col">
+              <span id="dayTitle1" class="col-head"></span>
+              <img
+                id="weatherIcon1"
+                class="weatherIcon"
+                src="./images/weather_icons/cloudy.png"
+                alt="cloudy"
+              />
+              <div>
+                <span id="data1"></span>
+                <span>°F</span>
+              </div>
+            </div>
+            <div class="flex-col">
+              <span id="dayTitle2" class="col-head"></span>
+              <img
+                id="weatherIcon2"
+                class="weatherIcon"
+                src="./images/weather_icons/cloudy.png"
+                alt="cloudy"
+              />
+              <div>
+                <span id="data2"></span>
+                <span>°F</span>
+              </div>
+            </div>
+            <div class="flex-col">
+              <span id="dayTitle3" class="col-head"></span>
+              <img
+                id="weatherIcon3"
+                class="weatherIcon"
+                src="./images/weather_icons/cloudysun.png"
+                alt="sunny_cloud"
+              />
+              <div>
+                <span id="data3"></span>
+                <span>°F</span>
+              </div>
+            </div>
+            <div class="flex-col">
+              <span id="dayTitle4" class="col-head"></span>
+              <img
+                id="weatherIcon4"
+                class="weatherIcon"
+                src="./images/weather_icons/snowy.png"
+                alt="snowy"
+              />
+              <div>
+                <span id="data4"></span>
+                <span>°F</span>
+              </div>
+            </div>
+            <div class="flex-col">
+              <span id="dayTitle5" class="col-head"></span>
+              <img
+                id="weatherIcon5"
+                class="weatherIcon"
+                src="./images/weather_icons/snowy.png"
+                alt="sunny"
+              />
+              <div>
+                <span id="data5"></span>
+                <span>°F</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <div class="grid"></div>
+        <article class="heroArticle">
+          <h2>Hero of the Week</h2>
+          <h3>Felicia faux</h3>
+          <img
+            src="./images/felicia-resize.jpg"
+            alt="heroImage"
+            loading="lazy"
+          />
+          <p>
+            Felicia is our hero of the day! After a long day at work, and a full
+            time school schedule, she makes time in her week to go and help at a
+            local soup kitchen to provide for those who need it most!
+            <a class="linkToHero" href="#"> Here </a>
+          </p>
+        </article>
+        <article class="popularRead">
+          <h2 id="popTitle">Community Discussions</h2>
+          <p>
+            <a class="topic" href="#">How to Cook Rice...</a>
+            <br />
+          </p>
+          <p><a class="topic" href="#">How to Cook Chicken...</a> <br /></p>
+          <p>
+            <a class="topic" href="#">How to Make Lemon Pie...</a>
+            <br />
+          </p>
+          <p><a class="topic" href="#">How to Cook Turkey...</a> <br /></p>
+        </article>
+      </div>
+      <footer>
+        © <span id="year"></span> | Austin Donovan | Utah |
+        <a
+          id="byuLink"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://byui.edu"
+          >BYUI Online Learning</a
+        >
+        <br />
+        Last updated: <date></date>
+      </footer>
+    </main>
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"
+      defer
+    ></script>
+    <script src="./js/sodasprings/soda-main.js" defer></script>
+    <script src="./js/sodasprings/sodasprings.js" defer></script>
+    <script src="./js/sodasprings/soda-town-data.js" defer></script>
+
+    <script src="./js/aside.js" defer></script>
+    <script src="/js/fontLoader.js" defer></script>
+    <script src="./js/menuToggle.js" defer></script>
+    <script src="./js/scripts.js" defer></script>
+  </body>
+</html>
