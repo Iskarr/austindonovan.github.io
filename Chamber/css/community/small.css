@@ -97,8 +97,24 @@ header {
 }
 
 footer {
+  background: #807fbf; /* Old browsers */
+  background: -moz-linear-gradient(
+    top,
+    #807fbf 2%,
+    #4c4c99 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    #807fbf 2%,
+    #4c4c99 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #807fbf 2%,
+    #4c4c99 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#807fbf', endColorstr='#4c4c99',GradientType=0 ); /* IE6-9 */
   height: 5vh;
-  background-color: #807fbf;
   color: #fff;
   margin-top: 1rem;
   text-align: center;
