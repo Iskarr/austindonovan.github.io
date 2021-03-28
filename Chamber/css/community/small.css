@@ -121,27 +121,26 @@ footer {
 }
 
 /* Demo Specific Styles */
-
 body {
   margin: 0 auto;
   max-width: 65.5em;
   padding: 1em 0;
 }
 
+/* 
 header,
 aside,
 article {
   align-items: center;
   justify-content: center;
   height: 15vh;
-}
+} */
 
 /*  */
-article p,
+/* article p,
 article h2 {
   text-align: center;
-}
-
+} */
 article {
   margin-top: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
@@ -157,15 +156,15 @@ article {
   height: 28rem;
 }
 
-article h3 {
+/* article h3 {
   text-align: center;
-}
+} */
 
-img {
+/* img {
   width: 100%;
-}
+} */
 
-.heroArticle {
+/* .heroArticle {
   grid-column: 1 / 4;
   border-radius: 2%;
   height: 32rem;
@@ -177,12 +176,12 @@ img {
   margin: 10px auto 20px;
   display: block;
   text-align: center;
-}
+} */
 
-.linkToHero {
+/* .linkToHero {
   color: #fff;
-}
-
+} */
+/* 
 .heroArticle p {
   font-size: 1em;
 }
@@ -191,13 +190,13 @@ img {
   grid-column: 1 / 4;
   padding: 10px;
   height: 42rem;
-}
-
+} */
+/* 
 section {
   text-align: center;
   max-width: 20rem;
-}
-
+} */
+/* 
 .stats {
   position: absolute;
   top: 425px;
@@ -213,10 +212,10 @@ section {
   height: 27rem;
   border-radius: 15px;
   width: 100%;
-}
+} */
 
 /* Main towns background */
-.mainTowns {
+/* .mainTowns {
   font-style: italic;
   font-size: 1.1em;
 }
@@ -243,17 +242,17 @@ section {
 
 .sidebar-left p {
   font-size: 1.2em;
-}
+} */
 
 /* five day forcast */
 
 .flex {
-  display: none;
+  /* display: none; */
   /* flex-direction: row; */
   /* let us combine row and wrap with flow */
-  flex-flow: row wrap;
+  /* flex-flow: row wrap; */
 }
-
+/* 
 #forcastTitle {
   display: none;
 }
@@ -301,8 +300,8 @@ th {
   font-size: 1rem;
   background-color: #0388a6;
   color: white;
-}
-
+} */
+/* 
 .mapContent {
   display: flex;
   background-color: #ccc;
@@ -312,14 +311,14 @@ th {
   padding: 1rem;
   border: 1px solid #000;
   border-radius: 9px;
-}
-
+} */
+/* 
 article.mainTowns img {
   width: 95%;
   height: 50%;
-}
+} */
 
-main {
+/* main {
   text-align: center;
 }
 
@@ -344,7 +343,7 @@ article.sidebar-left p {
 #headerTitle {
   padding: 0;
   margin: 0;
-}
+} */
 
 #byuLink {
   color: white;
