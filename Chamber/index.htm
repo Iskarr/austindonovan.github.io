@@ -3,21 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="shortcut icon" href="/images/favicon.ico" />
     <link rel="stylesheet" href="./css/community/normalize.css" />
     <link rel="stylesheet" href="./css/community/small.css" />
     <!-- <link rel="stylesheet" href="./css/community/medium.css" /> -->
     <link rel="stylesheet" href="./css/community/large.css" />
+    <link rel="stylesheet" href="./css/community/icons.css" />
 
     <title>Tooele Chamber of Commerce</title>
   </head>
   <body>
-    <!-- <aside id="aside">
-      <p>
-        Saturday is Preston Pancake in the park day! Every Morning, 9:00AM in
-        the preston park, get free warm pancakes(no waffles included.)
-      </p>
-    </aside> -->
     <header>
       <picture>
         <img id="logo" src="./images/mountainlogo2.png" alt="logo" />
@@ -33,30 +32,35 @@
       <button onclick="toggleMenu()">&#9776; Menu</button>
       <ul id="primaryNav" class="hide">
         <li><a class="active" href="#">Home</a></li>
-        <li><a href="#">Tooele</a></li>
+        <li><a href="./tooele.htm">Tooele</a></li>
         <li><a href="./join.htm">Join</a></li>
         <li><a href="./directory.htm">Directory</a></li>
-        <li><a href="#">Contact Us</a></li>
+        <li><a href="./contact.htm">Contact Us</a></li>
       </ul>
     </nav>
     <main>
-      <!-- <img
-        id="headerImg"
-        src="./images/soup-kitchen.jpeg"
-        alt="mt Preston"
-        loading="lazy"
-      /> -->
       <div class="one">
-        <img id="" src="./images/picnic/picnic-large.jpg" alt="placeholder" />
+        <img
+          id="mImg"
+          src="./images/hero-image/scene-large1200.jpg"
+          alt="placeholder"
+        />
+        <section id="actionMains">
+          <h2>Tooele Chamber of Commerce</h2>
+          <button class="mainBtn">Join</button>
+          <button class="mainBtn">Login</button>
+        </section>
       </div>
       <div class="two">
-        <div class="mainBtns">First box</div>
-        <div class="mainBtns">Second box</div>
-        <div class="mainBtns">Third box</div>
+        <button class="mainBtns">Join</button>
+        <button class="mainBtns">Convene</button>
+        <button class="mainBtns">Lead</button>
       </div>
       <div class="three">
-        <article class="sidebar-left">
+        <h2>Business Super Star of the month!</h2>
+        <article id="starBusiness" class="sidebar-left">
           <div class="contentBox">
+            <h3>Business Title</h3>
             <picture>
               <source
                 srcset="./images/picnic/picnic-large.jpg"
@@ -68,67 +72,136 @@
               />
               <img src="./images/picnic/picnic-small.jpg" alt="picnic image" />
             </picture>
-            <h2 id="articleTitle">Preston best picnic location</h2>
-            <h3 class="articleTitle">By Judy Roulding</h3>
-            <p id="articleBody">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore
-              voluptatibus beatae iure placeat amet, deserunt eum reprehenderit
-              consequuntur, fugiat modi obcaecati animi! Eligendi corrupti
-              provident eveniet laborum ad architecto corporis eaque quod.
-              Reiciendis accusamus suscipit nam minima ex commodi laudantium
-              quisquam beatae blanditiis, at quaerat harum ullam eligendi
-              corporis voluptates quod debitis. Ipsum vitae laboriosam corporis.
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+              imperdiet, nulla et dictum interdum, nisi lorem egestas vitae
+              scel<span id="dots">...</span
+              ><span id="more"
+                >erisque enim ligula venenatis dolor. Maecenas nisl est,
+                ultrices nec congue eget, auctor vitae massa. Fusce luctus
+                vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed
+                ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis
+                imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida
+                venenatis. Integer fringilla congue eros non fermentum. Sed
+                dapibus pulvinar nibh tempor porta.</span
+              >
             </p>
+            <button onclick="myFunction()" id="myBtn">Read more</button>
           </div>
         </article>
-      </div>
-      <div class="four">
-        <article class="sidebar-left">
-          <div class="contentBox">
-            <picture>
-              <source
-                srcset="./images/picnic/picnic-large.jpg"
-                media="(min-width: 960px)"
-              />
-              <source
-                srcset="./images/picnic/picnic-med.jpg"
-                media="(min-width: 610px)"
-              />
-              <img src="./images/picnic/picnic-small.jpg" alt="picnic image" />
-            </picture>
-            <h2 id="articleTitle">Preston best picnic location</h2>
-            <h3 class="articleTitle">By Judy Roulding</h3>
-            <p id="articleBody">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore
-              voluptatibus beatae iure placeat amet, deserunt eum reprehenderit
-              consequuntur, fugiat modi obcaecati animi! Eligendi corrupti
-              provident eveniet laborum ad architecto corporis eaque quod.
-              Reiciendis accusamus suscipit nam minima ex commodi laudantium
-              quisquam beatae blanditiis, at quaerat harum ullam eligendi
-              corporis voluptates quod debitis. Ipsum vitae laboriosam corporis.
-            </p>
-          </div>
-        </article>
-      </div>
-      <div class="five">
         <div class="businessContainer">
-          <img class="busImg" src="./images/felicia.jpg" alt="business_logo" />
+          <h2>Business Name!</h2>
+          <img
+            class="busImg"
+            src="./images/weather_icons/sunny.png"
+            alt="business_logo"
+          />
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. sit amet
             consectetur adipisicing elit.
           </p>
         </div>
         <div class="businessContainer">
-          <img class="busImg" src="./images/felicia.jpg" alt="business_logo" />
+          <h2>Business Name!</h2>
+          <img
+            class="busImg"
+            src="./images/weather_icons/cloudy.png"
+            alt="business_logo"
+          />
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit.
             Consequatur, voluptatem.
           </p>
         </div>
       </div>
+      <div class="four">
+        <h1>Commercial Ads - We sell that stuff</h1>
+      </div>
+      <div class="five">
+        <article id="forecastContainer">
+          <h2 id="forcastTitle">5 Day Forecast</h2>
+          <div class="flex">
+            <div class="flex-col">
+              <span id="dayTitle1" class="col-head"></span>
+              <img
+                id="weatherIcon1"
+                class="weatherIcon"
+                src="./images/weather_icons/cloudy.png"
+                alt="cloudy"
+              />
+              <div>
+                <span id="data1"></span>
+                <span>°F</span>
+              </div>
+            </div>
+            <div class="flex-col">
+              <span id="dayTitle2" class="col-head"></span>
+              <img
+                id="weatherIcon2"
+                class="weatherIcon"
+                src="./images/weather_icons/cloudy.png"
+                alt="cloudy"
+              />
+              <div>
+                <span id="data2"></span>
+                <span>°F</span>
+              </div>
+            </div>
+            <div class="flex-col">
+              <span id="dayTitle3" class="col-head"></span>
+              <img
+                id="weatherIcon3"
+                class="weatherIcon"
+                src="./images/weather_icons/cloudysun.png"
+                alt="sunny_cloud"
+              />
+              <div>
+                <span id="data3"></span>
+                <span>°F</span>
+              </div>
+            </div>
+            <div class="flex-col">
+              <span id="dayTitle4" class="col-head"></span>
+              <img
+                id="weatherIcon4"
+                class="weatherIcon"
+                src="./images/weather_icons/snowy.png"
+                alt="snowy"
+              />
+              <div>
+                <span id="data4"></span>
+                <span>°F</span>
+              </div>
+            </div>
+            <div class="flex-col">
+              <span id="dayTitle5" class="col-head"></span>
+              <img
+                id="weatherIcon5"
+                class="weatherIcon"
+                src="./images/weather_icons/snowy.png"
+                alt="sunny"
+              />
+              <div>
+                <span id="data5"></span>
+                <span>°F</span>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
       <div class="six">
         <div class="mapContent">
           <div id="map"></div>
+          <section id="mapLoco">
+            <h3>Tooele Chamber of Commerce</h3>
+            <p>301 N 1st E</p>
+            <p>Tooele, UT, 84074</p>
+            <br />
+            <p>&#128222; 999.999.9999</p>
+            <p>&#128233; tooelechamber.org</p>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+          </section>
         </div>
       </div>
     </main>
@@ -154,7 +227,9 @@
     <script src="./js/menuToggle.js" defer></script>
     <script src="./js/scripts.js" defer></script>
     <script src="./js/googlemap.js" defer></script>
-    <script src="./js/testapi.js"></script>
+    <script src="./js/testapi.js" defer></script>
+    <script src="./js/readmore.js"></script>
+    <script src="./js/sodasprings/sodasprings.js"></script>
     <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgPrN17S9ywmvCBLVd-Pa77PoAXymFmtE&callback=initMap&libraries=&v=weekly"
       defer

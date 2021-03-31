@@ -1,5 +1,5 @@
 const appID = "284bc15c1ef67f2d185f86a29c1373bd";
-const forecastURL = `https://api.openweathermap.org/data/2.5/forecast?zip=83276,US&appid=${appID}&units=imperial`;
+const forecastURL = `https://api.openweathermap.org/data/2.5/forecast?zip=84074,US&appid=${appID}&units=imperial`;
 
 fetch(forecastURL)
   .then((response) => response.json())
@@ -43,7 +43,6 @@ fetch(forecastURL)
     for (let x = 0; x < 40; x++) {
       if (jsObject.list[x].dt_txt.includes("18:00")) {
         iconsForWeather[x] = jsObject.list[x].weather[0].icon;
-
         iconURL[x] =
           "http://openweathermap.org/img/w/" + iconsForWeather[x] + ".png";
 

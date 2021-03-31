@@ -33,20 +33,17 @@
       <button onclick="toggleMenu()">&#9776; Menu</button>
       <ul id="primaryNav" class="hide">
         <li><a href="./index.htm">Home</a></li>
-        <li><a href="#">City</a></li>
-        <li><a href="./join.htm">Join</a></li>
-        <li><a class="active" href="./gallery-7.htm">Directory</a></li>
-        <li><a href="#">Contact Us</a></li>
+        <li><a href="./tooele.htm">Tooele</a></li>
+        <li><a class="active" href="./join.htm">Join</a></li>
+        <li><a href="./directory.htm">Directory</a></li>
+        <li><a href="./contact.htm">Contact Us</a></li>
       </ul>
     </nav>
 
     <main>
-      <header>
-        <h2>Storm Report Application</h2>
-      </header>
       <form method="GET" action="thanks.htm">
         <fieldset>
-          <legend>Applicant Information</legend>
+          <legend>Business Application Information</legend>
           <label>
             Full Name*
             <input
@@ -80,91 +77,76 @@
               required
           /></label>
           <br />
-          <label>
-            Zip Code*
-            <input
-              class="bo"
-              type="number"
-              name="zip"
-              placeholder="00000"
-              required
-          /></label>
         </fieldset>
 
         <fieldset>
-          <legend>Storm Details</legend>
+          <legend>Business Details</legend>
           <label>
-            Date of the Storm:
-            <input class="bo" type="date" name="completeDate" />
-          </label>
+            Business Name*
+            <input
+              class="bo"
+              type="text"
+              name="businessName"
+              pattern="^[a-zA-Z]{3,}(?: [a-zA-Z]+){0,2}$"
+              placeholder="business Name here"
+              required
+          /></label>
           <br />
-          <label for="browser">Choose the type of storm:</label>
+          <label for="browser">Choose the type of business:</label>
           <input class="bo" list="browsers" name="browser" id="browser" />
           <br />
           <datalist id="browsers">
-            <option value="Flash Flood"></option>
-            <option value="Hail"></option>
-            <option value="Hurricane"></option>
-            <option value="Thunderstorm"></option>
-            <option value="Tornado"></option>
+            <option value="Non-Profit"></option>
+            <option value="LLC(Limited Liability Corp.)"></option>
+            <option value="Corporation"></option>
+            <option value="Sole Proprietorship"></option>
+            <option value="Partnership"></option>
+            <option value="Limited Partnership"></option>
+            <option value="Co-Op"></option>
           </datalist>
-
-          <br />
-          <label for="rating"
-            >Rating: &nbsp;&nbsp;&nbsp;
+          <label>
+            Business Address
             <input
-              type="range"
-              id="rating"
-              value="5"
-              min="1"
-              max="10"
-              step="1"
-              list="tickmarks"
-              oninput="adjustRating(this.value)"
-              onchange="adjustRating(this.value)"
+              class="bo"
+              type="text"
+              name="Address"
+              pattern="\d{1,5}\s\w.\s(\b\w*\b\s){1,2}\w*\."
+              placeholder="address"
+          /></label>
+          <br />
+          <label>
+            Business Website
+            <input
+              class="bo"
+              type="text"
+              name="website"
+              pattern="^((https?|ftp|smtp):\/\/)?(www.)?[a-z0-9]+\.[a-z]+(\/[a-zA-Z0-9#]+\/?)*$"
+              placeholder="www.business.com"
             />
-            <span id="ratingvalue">5</span>
           </label>
 
-          <datalist id="tickmarks">
-            <option value="0"></option>
-            <option value="1"></option>
-            <option value="2"></option>
-            <option value="3"></option>
-            <option value="4"></option>
-            <option value="5"></option>
-            <option value="6"></option>
-            <option value="7"></option>
-            <option value="8"></option>
-            <option value="9"></option>
-            <option value="10"></option>
-          </datalist>
-
-          <div>Storm Region</div>
+          <div>Membership Tier</div>
           <label>
             <select class="bo" name="browsers">
-              <option value="" disabled selected>Select a Region...</option>
-              <option value="preston">Preston</option>
-              <option value="soda">Soda Springs</option>
-              <option value="fish">Fish Haven</option>
+              <option value="" disabled selected>Select a Tier Level...</option>
+              <option value="non-profit">Non-profit ($100)</option>
+              <option value="soda">Bronze ($200)</option>
+              <option value="fish">Silver ($400)</option>
+              <option value="fish">Gold ($1000)</option>
             </select>
           </label>
-
-          <div>user in-danger level</div>
-          <div class="selection">
-            <label
-              ><input class="bo" type="radio" name="time" value="9" />
-              yes</label
-            >
-          </div>
-          <div class="selection">
-            <input type="radio" id="time3" name="time" value="10" />
-            <label for="time3">maybe</label>
-          </div>
-          <div class="selection">
-            <input type="radio" id="time4" name="time" value="11" />
-            <label for="time4">no</label>
-          </div>
+          <br />
+          <label>
+            Business Description
+            <textarea
+              class="bo"
+              type="text"
+              name="business description"
+              placeholder="talk about your business here."
+              cols="30"
+              rows="10"
+            ></textarea>
+          </label>
         </fieldset>
 
         <fieldset>
@@ -182,7 +164,11 @@
             ></textarea>
           </label>
         </fieldset>
-        <input type="submit" value="Submit my Storm Report" class="submitBtn" />
+        <input
+          type="submit"
+          value="Submit my Business Application"
+          class="submitBtn"
+        />
       </form>
     </main>
 

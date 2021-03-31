@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/images/favicon.ico" />
+    <link rel="stylesheet" href="./css/community/normalize.css" />
+    <link rel="stylesheet" href="./css/community/small.css" />
+    <!-- <link rel="stylesheet" href="./css/community/medium.css" /> -->
+    <link rel="stylesheet" href="./css/community/large.css" />
+
+    <title>Tooele Chamber of Commerce</title>
+  </head>
+  <body>
+    <!-- <aside id="aside">
+      <p>
+        Saturday is Preston Pancake in the park day! Every Morning, 9:00AM in
+        the preston park, get free warm pancakes(no waffles included.)
+      </p>
+    </aside> -->
+    <header>
+      <picture>
+        <img id="logo" src="./images/mountainlogo2.png" alt="logo" />
+      </picture>
+      <section>
+        <h1 id="headerTitle">Tooele Chamber Of Commerce</h1>
+        <span>
+          Don't just dream a business, Make your business a reality.
+        </span>
+      </section>
+    </header>
+
+    <nav class="clearfix">
+      <button onclick="toggleMenu()">&#9776; Menu</button>
+      <ul id="primaryNav" class="hide">
+        <li><a href="./index.htm">Home</a></li>
+        <li><a href="./tooele.htm">Tooele</a></li>
+        <li><a href="./join.htm">Join</a></li>
+        <li><a href="./directory.htm">Directory</a></li>
+        <li><a class="active" href="./contact.htm">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <form method="GET" action="thanks.htm">
+        <fieldset>
+          <legend>Contact Information</legend>
+          <label>
+            Full Name*
+            <input
+              class="bo"
+              type="text"
+              name="fullName"
+              pattern="^[a-zA-Z]{3,}(?: [a-zA-Z]+){0,2}$"
+              placeholder="John Doe"
+              required
+          /></label>
+          <br />
+          <label>
+            Email*
+            <input
+              class="bo"
+              type="email"
+              name="email"
+              placeholder="someone@gmail.com"
+              required
+          /></label>
+          <label>
+            Phone
+            <input
+              class="bo"
+              type="tel"
+              id="phone"
+              name="phone"
+              pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+              placeholder="1234567890"
+          /></label>
+          <br />
+
+          <br />
+        </fieldset>
+        <input type="submit" value="Submit My Message" class="submitBtn" />
+      </form>
+
+      <div class="six">
+        <div class="mapContent">
+          <div id="map"></div>
+          <section id="mapLoco">
+            <h3>Tooele Chamber of Commerce</h3>
+            <p>301 N 1st E</p>
+            <p>Tooele, UT, 84074</p>
+            <br />
+            <p>&#128222; 999.999.9999</p>
+            <p>&#128233; tooelechamber.org</p>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      © <span id="year"></span> | Austin Donovan | Utah |
+      <a
+        id="byuLink"
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://byui.edu"
+        >BYUI Online Learning</a
+      >
+      <br />
+      Last updated: <date></date>
+    </footer>
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"
+      defer
+    ></script>
+    <!-- <script src="./js/aside.js" defer></script> -->
+    <script src="/js/fontLoader.js" defer></script>
+    <script src="./js/menuToggle.js" defer></script>
+    <script src="./js/scripts.js" defer></script>
+    <script src="./js/googlemap.js" defer></script>
+    <script src="./js/testapi.js" defer></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgPrN17S9ywmvCBLVd-Pa77PoAXymFmtE&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+  </body>
+</html>
