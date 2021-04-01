@@ -87,7 +87,7 @@
               class="bo"
               type="text"
               name="businessName"
-              pattern="^[a-zA-Z]{3,}(?: [a-zA-Z]+){0,2}$"
+              pattern="^(?!\s)(?!.*\s$)(?=.*[a-zA-Z0-9])[a-zA-Z0-9 '~?!]{2,}$"
               placeholder="business Name here"
               required
           /></label>
@@ -127,7 +127,7 @@
 
           <div>Membership Tier</div>
           <label>
-            <select class="bo" name="browsers">
+            <select class="bo" name="browsers" required>
               <option value="" disabled selected>Select a Tier Level...</option>
               <option value="non-profit">Non-profit ($100)</option>
               <option value="soda">Bronze ($200)</option>
