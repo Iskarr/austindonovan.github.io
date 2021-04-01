@@ -4,63 +4,63 @@
       "name": "Tom",
       "lastname": "Smith",
       "birthdate": "23 December 1983",
-      "imageurl": "../Chamber/images/business_imgs/tom.jpg",
+      "imageurl": "https://iskarr.github.io/austindonovan.github.io/Chamber/images/business_imgs/tom.jpg",
       "description": "I'm the description about this person that hasn't been filled in yet."
     },
     {
       "name": "Paulina",
       "lastname": "Young",
       "birthdate": "01 June 1801",
-      "imageurl": "../Chamber/images/business_imgs/paulina.jpg",
+      "imageurl": "https://iskarr.github.io/austindonovan.github.io/Chamber/images/business_imgs/paulina.jpg",
       "description": "I'm the description about this person that hasn't been filled in yet."
     },
     {
       "name": "Andrea",
       "lastname": "Taylor",
       "birthdate": "01 June 1801",
-      "imageurl": "../Chamber/images/business_imgs/andrea.jpg",
+      "imageurl": "https://iskarr.github.io/austindonovan.github.io/Chamber/images/business_imgs/andrea.jpg",
       "description": "I'm the description about this person that hasn't been filled in yet."
     },
     {
       "name": "Karoline",
       "lastname": "Woodruff",
       "birthdate": "01 June 1801",
-      "imageurl": "../Chamber/images/business_imgs/karoline.jpg",
+      "imageurl": "https://iskarr.github.io/austindonovan.github.io/Chamber/images/business_imgs/karoline.jpg",
       "description": "I'm the description about this person that hasn't been filled in yet."
     },
     {
       "name": "Julia",
       "lastname": "Snow",
       "birthdate": "01 June 1801",
-      "imageurl": "../Chamber/images/business_imgs/julia.jpg",
+      "imageurl": "https://iskarr.github.io/austindonovan.github.io/Chamber/images/business_imgs/julia.jpg",
       "description": "I'm the description about this person that hasn't been filled in yet."
     },
     {
       "name": "Saul",
       "lastname": "Smith",
       "birthdate": "01 June 1801",
-      "imageurl": "../Chamber/images/business_imgs/saul.jpg",
+      "imageurl": "https://iskarr.github.io/austindonovan.github.io/Chamber/images/business_imgs/saul.jpg",
       "description": "I'm the description about this person that hasn't been filled in yet."
     },
     {
       "name": "Wong",
       "lastname": "Grant",
       "birthdate": "01 June 1801",
-      "imageurl": "../Chamber/images/business_imgs/wong.jpg",
+      "imageurl": "https://iskarr.github.io/austindonovan.github.io/Chamber/images/business_imgs/wong.jpg",
       "description": "I'm the description about this person that hasn't been filled in yet."
     },
     {
       "name": "Jarad",
       "lastname": "Smith",
       "birthdate": "01 June 1801",
-      "imageurl": "../Chamber/images/business_imgs/jarad.jpg",
+      "imageurl": "https://iskarr.github.io/austindonovan.github.io/Chamber/images/business_imgs/jarad.jpg",
       "description": "I'm the description about this person that hasn't been filled in yet."
     },
     {
-      "name": "Justin",
+      "name": "Justine",
       "lastname": "Willow",
       "birthdate": "01 June 1801",
-      "imageurl": "../Chamber/images/business_imgs/justine.jpg",
+      "imageurl": "https://iskarr.github.io/austindonovan.github.io/Chamber/images/business_imgs/justine.jpg",
       "description": "I'm the description about this person that hasn't been filled in yet."
     }
   ]
