@@ -6,16 +6,32 @@ imgsURL = "https://picsum.photos/v2/list";
 fetch(businessAPI)
   .then((response) => response.json())
   .then((jsObject) => {
-    // console.log(jsObject);
-    const imageList = jsObject;
-    console.log(imageList.business[1].imageurl);
+    const people = jsObject["business"];
     let num = 0;
-    for (let i = 0; i < 9; i++) {
-      let imageURLs = imageList[num + 1].imageurl;
-      // console.log(imageURLs);
 
-      document.getElementById(`image${num + 1}`).setAttribute("src", imageURLs);
+    for (let i = 0; i < people.length; i++) {
+      let fullNames = people[i].name + " ";
+      let lastNames = people[i].lastname;
+      let descriptions = people[i].description;
+
+      console.log(descriptions);
+      document
+        .getElementById(`image${num + 1}`)
+        .setAttribute("src", people[num].imageurl);
+
+      document.getElementById(`fullName${num + 1}`).textContent = fullNames;
+      document.getElementById(`lastName${num + 1}`).textContent = lastNames;
+      document.getElementById(`descript${num + 1}`).textContent = descriptions;
       num++;
-      console.log(num);
     }
+
+    // let num = 0;
+    // for (let i = 0; i < 9; i++) {
+    //   let imageURLs = imageList[num + 1].imageurl;
+    //   console.log(imageURLs);
+
+    //   document.getElementById(`image${num + 1}`).setAttribute("src", imageURLs);
+    //   num++;
+    //   console.log(num);
+    // }
   });
