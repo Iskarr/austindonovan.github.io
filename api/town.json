@@ -1,0 +1,11 @@
+{
+  "town": [
+    {
+      "name": "Tooele",
+      "lastname": "Smith",
+      "birthdate": "23 December 1983",
+      "imageurl": "https://iskarr.github.io/austindonovan.github.io/Chamber/images/business_imgs/tom.jpg",
+      "description": "I'm the description about this person that hasn't been filled in yet."
+    }
+  ]
+}

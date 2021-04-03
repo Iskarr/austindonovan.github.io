@@ -1,7 +1,7 @@
 businessAPI =
   "https://iskarr.github.io/austindonovan.github.io/api/business.json";
 
-imgsURL = "https://picsum.photos/v2/list";
+// imgsURL = "https://picsum.photos/v2/list";
 
 fetch(businessAPI)
   .then((response) => response.json())
@@ -11,7 +11,7 @@ fetch(businessAPI)
 
     for (let i = 0; i < people.length; i++) {
       let fullNames = people[i].name + " ";
-      let lastNames = people[i].lastname;
+      let addresses = people[i].address;
       let descriptions = people[i].description;
 
       console.log(descriptions);
@@ -20,7 +20,7 @@ fetch(businessAPI)
         .setAttribute("src", people[num].imageurl);
 
       document.getElementById(`fullName${num + 1}`).textContent = fullNames;
-      document.getElementById(`lastName${num + 1}`).textContent = lastNames;
+      document.getElementById(`lastName${num + 1}`).textContent = addresses;
       document.getElementById(`descript${num + 1}`).textContent = descriptions;
       num++;
     }

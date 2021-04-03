@@ -1,67 +1,58 @@
 {
   "business": [
     {
-      "name": "Tom",
-      "lastname": "Smith",
-      "birthdate": "23 December 1983",
+      "name": "Simply Bliss BBQ",
+      "address": "88 S Tooele Blvd inside Tooele Tech, use side , Tooele, UT 84074",
       "imageurl": "https://iskarr.github.io/austindonovan.github.io/Chamber/images/business_imgs/tom.jpg",
-      "description": "I'm the description about this person that hasn't been filled in yet."
+      "description": "We offer homemade food that is freshly cooked with fresh ingredients."
     },
     {
-      "name": "Paulina",
-      "lastname": "Young",
-      "birthdate": "01 June 1801",
+      "name": "Nigh-Time Donuts",
+      "address": "299 N Main St Tooele, UT 84074",
       "imageurl": "https://iskarr.github.io/austindonovan.github.io/Chamber/images/business_imgs/paulina.jpg",
-      "description": "I'm the description about this person that hasn't been filled in yet."
+      "description": "Fresh donuts, bagels and sandwiches made at 5AM."
     },
     {
-      "name": "Andrea",
-      "lastname": "Taylor",
-      "birthdate": "01 June 1801",
+      "name": "Osaka Sushi",
+      "address": "996 N Main St Tooele, UT 84074",
       "imageurl": "https://iskarr.github.io/austindonovan.github.io/Chamber/images/business_imgs/andrea.jpg",
-      "description": "I'm the description about this person that hasn't been filled in yet."
+      "description": "Fresh made sushi and a variety of rolls, avacado bom, bento boxes, etc."
     },
     {
-      "name": "Karoline",
-      "lastname": "Woodruff",
-      "birthdate": "01 June 1801",
+      "name": "Roxberry",
+      "address": "1485 N 30 West Tooele, UT 84074",
       "imageurl": "https://iskarr.github.io/austindonovan.github.io/Chamber/images/business_imgs/karoline.jpg",
-      "description": "I'm the description about this person that hasn't been filled in yet."
+      "description": "The best and freshest smoothies in Tooele. Real ingredients, frozen yogurt, acai, pitaya."
     },
     {
-      "name": "Julia",
-      "lastname": "Snow",
-      "birthdate": "01 June 1801",
+      "name": "Home Depot",
+      "address": "222 E 2400 N, Tooele, UT 84074",
       "imageurl": "https://iskarr.github.io/austindonovan.github.io/Chamber/images/business_imgs/julia.jpg",
-      "description": "I'm the description about this person that hasn't been filled in yet."
+      "description": "Chain home improvement retailer for tools, appliances & other products (some offer truck rentals)."
     },
     {
-      "name": "Saul",
-      "lastname": "Smith",
-      "birthdate": "01 June 1801",
+      "name": "Guzzle Soda Shack",
+      "address": "188 W 1180 N St, Tooele, UT 84074",
       "imageurl": "https://iskarr.github.io/austindonovan.github.io/Chamber/images/business_imgs/saul.jpg",
-      "description": "I'm the description about this person that hasn't been filled in yet."
+      "description": "Some incredible soda flavors and mixtures for a great price."
     },
     {
-      "name": "Wong",
-      "lastname": "Grant",
-      "birthdate": "01 June 1801",
+      "name": "Mountain West Medical Center",
+      "address": "2055 N Main St, Tooele, UT 84074",
       "imageurl": "https://iskarr.github.io/austindonovan.github.io/Chamber/images/business_imgs/wong.jpg",
-      "description": "I'm the description about this person that hasn't been filled in yet."
+      "description": "Mountain West Medical Center is a 38 licensed bed hospital in Tooele, Utah, with 37 active and 41 courtesy physicians."
     },
     {
-      "name": "Jarad",
-      "lastname": "Smith",
-      "birthdate": "01 June 1801",
+      "name": "The UPS Store",
+      "address": "772 N Main St, Tooele, UT 84074",
       "imageurl": "https://iskarr.github.io/austindonovan.github.io/Chamber/images/business_imgs/jarad.jpg",
-      "description": "I'm the description about this person that hasn't been filled in yet."
+      "description": "Store offering shipping, packaging, printing & other services, plus office supplies."
     },
     {
-      "name": "Justine",
-      "lastname": "Willow",
-      "birthdate": "01 June 1801",
+      "name": "Security Title Insurance Agency of Utah, Inc.",
+      "address": "1485 N 30 W d1, Tooele, UT 84074",
       "imageurl": "https://iskarr.github.io/austindonovan.github.io/Chamber/images/business_imgs/justine.jpg",
-      "description": "I'm the description about this person that hasn't been filled in yet."
+      "description": "Security titles, insurance or law questions, we got you covered."
     }
   ]
 }

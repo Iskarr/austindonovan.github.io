@@ -1,12 +1,19 @@
-// const cityAPI =
-//   "https://iskarr.github.io/austindonovan.github.io/api/city.json";
+const cityAPI =
+  "https://datausa.io/api/data?drilldowns=State&measures=Population&year=latest";
 
-// fetch(cityAPI)
-//   .then((response) => response.json())
-//   .then((jsObject) => {
-//     console.log(jsObject);
+function addCommas(n) {
+  return format(n);
+}
+fetch(cityAPI)
+  .then((response) => response.json())
+  .then((jsObject) => {
+    console.log(jsObject);
 
-//     const cityList = jsObject;
-//     // this will get each city from 0-X depending on city amount.
-//     console.log(cityList.prophets[1]);
-//   });
+    const cityList = jsObject.data[44];
+    console.log(cityList);
+
+    document.getElementById("IDyear").textContent = cityList.Year;
+    document.getElementById("population").textContent = cityList.Population;
+
+    // this will get each city from 0-X depending on city amount.
+  });
