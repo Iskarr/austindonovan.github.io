@@ -156,7 +156,7 @@ article {
   border-radius: 4px;
   box-sizing: border-box;
   overflow: hidden;
-  height: 30rem;
+  height: 32rem;
 }
 
 #byuLink {
@@ -522,6 +522,24 @@ input:required:valid {
   border-left: green solid 6px;
 }
 input:invalid {
+  border-color: red;
+  border-left: red solid 6px;
+}
+
+textarea:required:valid {
+  border-color: green;
+  border-left: green solid 6px;
+}
+textarea:invalid {
+  border-color: red;
+  border-left: red solid 6px;
+}
+
+select:required:valid {
+  border-color: green;
+  border-left: green solid 6px;
+}
+select:invalid {
   border-color: red;
   border-left: red solid 6px;
 }

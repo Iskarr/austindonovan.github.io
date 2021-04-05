@@ -46,13 +46,24 @@
         <fieldset>
           <legend>Contact Information</legend>
           <label>
-            Full Name*
+            First Name*
             <input
               class="bo"
               type="text"
-              name="fullName"
+              name="firstname"
               pattern="^[a-zA-Z]{3,}(?: [a-zA-Z]+){0,2}$"
-              placeholder="John Doe"
+              placeholder="John"
+              required
+          /></label>
+          <br />
+          <label>
+            Last Name*
+            <input
+              class="bo"
+              type="text"
+              name="lastname"
+              pattern="^[a-zA-Z]{3,}(?: [a-zA-Z]+){0,2}$"
+              placeholder="Doe"
               required
           /></label>
           <br />
@@ -78,6 +89,22 @@
           <br />
 
           <br />
+        </fieldset>
+        <fieldset>
+          <legend>Additional Comments</legend>
+          <label>
+            Additional Information
+            <br />
+            <textarea
+              class="bo"
+              name="comments"
+              id="comments"
+              cols="33"
+              rows="10"
+              placeholder="Type your additional notes here..."
+              required
+            ></textarea>
+          </label>
         </fieldset>
         <input type="submit" value="Submit My Message" class="submitBtn" />
       </form>
@@ -118,7 +145,6 @@
     <script src="./js/menuToggle.js" defer></script>
     <script src="./js/scripts.js" defer></script>
     <script src="./js/googlemap.js" defer></script>
-    <script src="./js/testapi.js" defer></script>
     <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgPrN17S9ywmvCBLVd-Pa77PoAXymFmtE&callback=initMap&libraries=&v=weekly"
       defer

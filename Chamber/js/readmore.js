@@ -8,11 +8,11 @@ function myFunction() {
     dots.style.display = "inline";
     btnText.innerHTML = "Read more";
     moreText.style.display = "none";
-    starBusiness.style.height = "30rem";
+    starBusiness.style.height = "32rem";
   } else {
     dots.style.display = "none";
     btnText.innerHTML = "Read less";
     moreText.style.display = "inline";
-    starBusiness.style.height = "32rem";
+    starBusiness.style.height = "34rem";
   }
 }
