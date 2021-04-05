@@ -1,25 +1,4 @@
 @media only screen and (min-width: 64rem) {
-  nav {
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#807fbf+2,4c4c99+100 */
-    background: #807fbf; /* Old browsers */
-    background: -moz-linear-gradient(
-      top,
-      #807fbf 2%,
-      #4c4c99 100%
-    ); /* FF3.6-15 */
-    background: -webkit-linear-gradient(
-      top,
-      #807fbf 2%,
-      #4c4c99 100%
-    ); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(
-      to bottom,
-      #807fbf 2%,
-      #4c4c99 100%
-    ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#807fbf', endColorstr='#4c4c99',GradientType=0 ); /* IE6-9 */
-  }
-
   #logo {
     margin-top: 1rem;
     max-width: 156px;
@@ -63,23 +42,6 @@
     left: 0;
     height: 55%;
     width: 100%;
-  }
-
-  .mainBtns {
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    border: #000 solid 1px;
-    margin-right: 25px;
-    border: #444 solid 4px;
-    width: 125px;
-    height: 80px;
-    color: #fff;
-    background-color: #445ba9;
-    opacity: 0.95;
-    border-radius: 10%;
   }
 
   .one {
@@ -206,9 +168,9 @@
 
   .businessContainer {
     margin-top: 10px;
-    border: #111 solid 4px;
     background-color: #807fbf;
     border-radius: 10px;
+    height: 23rem;
   }
 
   p {
@@ -301,23 +263,5 @@
 
   form {
     grid-column: 2/6;
-  }
-
-  /******** TABLE VIEWS **********/
-  table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-  }
-
-  td,
-  th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-  }
-
-  tr:nth-child(even) {
-    background-color: #dddddd;
   }
 }

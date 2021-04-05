@@ -69,7 +69,24 @@ nav ul.hide {
 }
 
 .active {
-  color: #f2e205;
+  color: #e0c12f;
+}
+
+.mainBtns {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  border: #000 solid 1px;
+  margin-right: 25px;
+  border: #444 solid 4px;
+  width: 125px;
+  height: 80px;
+  color: #fff;
+  background-color: #445ba9;
+  opacity: 0.95;
+  border-radius: 10%;
 }
 
 header img {
@@ -131,7 +148,7 @@ article {
   margin-top: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
   transition: 0.3s;
-  background-color: #0388a6;
+  background-color: #807fbf;
   justify-content: center;
   align-items: center;
   padding: 8px 0;
@@ -210,6 +227,19 @@ main {
   border: 1px solid rgba(0, 0, 0, 0.8);
   font-size: 1rem;
   text-align: center;
+}
+
+.one h2 {
+  color: #fff;
+}
+
+#more {
+  display: none;
+}
+
+#bigImg {
+  width: 270px;
+  height: 270px;
 }
 
 #mImg {
@@ -304,9 +334,9 @@ main {
 
 .businessContainer {
   margin-top: 10px;
-  border: #111 solid 4px;
   background-color: #807fbf;
   border-radius: 10px;
+  height: 18rem;
 }
 
 .busImg {
@@ -382,6 +412,8 @@ main {
   padding: 1rem;
   font-size: 1.2em;
   text-align: center;
+  background-color: #ccc;
+  border-radius: 10px;
 }
 
 /* Gallery CSS */
@@ -390,8 +422,33 @@ main {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
   transition: 0.3s;
   padding: 3%;
-  background-color: #a1a0cc;
+  padding-bottom: 6%;
+  /* background-color: #a1a0cc; */
   border-radius: 15px;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e2d62f+0,f39237+71,f39237+71,f39237+99 */
+  background: #e2d62f; /* Old browsers */
+  background: -moz-linear-gradient(
+    top,
+    #e2d62f 0%,
+    #f39237 71%,
+    #f39237 71%,
+    #f39237 99%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    #e2d62f 0%,
+    #f39237 71%,
+    #f39237 71%,
+    #f39237 99%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #e2d62f 0%,
+    #f39237 71%,
+    #f39237 71%,
+    #f39237 99%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2d62f', endColorstr='#f39237',GradientType=0 ); /* IE6-9 */
 }
 
 img {
@@ -429,6 +486,25 @@ figcaption {
 
 img {
   width: 50%;
+}
+
+/******** TABLE VIEWS **********/
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 10px;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
 }
 
 /*********** FORM **********/
@@ -520,6 +596,8 @@ select.bo {
   width: 100%;
 }
 
-#more {
-  display: none;
+/*********** AD **********/
+#adImg {
+  width: 40rem;
+  height: 30rem;
 }

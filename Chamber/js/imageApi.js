@@ -13,6 +13,7 @@ fetch(businessAPI)
       let fullNames = people[i].name + " ";
       let addresses = people[i].address;
       let descriptions = people[i].description;
+      // let breaker = document.createElement("br");
 
       document
         .getElementById(`image${num + 1}`)
