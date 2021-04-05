@@ -14,7 +14,6 @@ fetch(businessAPI)
       let addresses = people[i].address;
       let descriptions = people[i].description;
 
-      console.log(descriptions);
       document
         .getElementById(`image${num + 1}`)
         .setAttribute("src", people[num].imageurl);

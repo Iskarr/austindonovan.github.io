@@ -8,7 +8,7 @@ function myFunction() {
     dots.style.display = "inline";
     btnText.innerHTML = "Read more";
     moreText.style.display = "none";
-    starBusiness.style.height = "28rem";
+    starBusiness.style.height = "30rem";
   } else {
     dots.style.display = "none";
     btnText.innerHTML = "Read less";

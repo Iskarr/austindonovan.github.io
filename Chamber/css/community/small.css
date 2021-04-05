@@ -139,7 +139,7 @@ article {
   border-radius: 4px;
   box-sizing: border-box;
   overflow: hidden;
-  height: 28rem;
+  height: 30rem;
 }
 
 #byuLink {
@@ -385,13 +385,17 @@ main {
 }
 
 /* Gallery CSS */
-
 .box {
   width: 20rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
   transition: 0.3s;
   padding: 3%;
-  background-color: #0388a6;
+  background-color: #a1a0cc;
+  border-radius: 15px;
+}
+
+img {
+  border-radius: 5px;
 }
 
 .box:hover {
