@@ -13,6 +13,6 @@ function myFunction() {
     dots.style.display = "none";
     btnText.innerHTML = "Read less";
     moreText.style.display = "inline";
-    starBusiness.style.height = "34rem";
+    starBusiness.style.height = "38rem";
   }
 }
