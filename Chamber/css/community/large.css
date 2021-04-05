@@ -49,7 +49,6 @@
     grid-column: 1 / 8;
     grid-row: 1;
     background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
     font-size: 1rem;
     text-align: center;
     max-width: 65.5rem;
@@ -97,7 +96,6 @@
     grid-column: 1 / 8;
     grid-row: 2/3;
     background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
     padding: 20px;
     font-size: 1rem;
     text-align: center;
@@ -109,7 +107,6 @@
     grid-column: 1/8;
     grid-row: 3;
     background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
     padding: 20px;
     font-size: 1rem;
     text-align: center;
@@ -123,7 +120,6 @@
     grid-column: 1/8;
     grid-row: 4;
     background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
     padding: 20px;
     font-size: 1rem;
     text-align: center;
@@ -134,7 +130,6 @@
     grid-column: 1/8;
     grid-row: 5;
     background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
     padding: 20px;
     font-size: 1rem;
     text-align: center;
@@ -181,7 +176,6 @@
     grid-column: 1/7;
     grid-row: 6;
     background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
     padding: 20px;
     font-size: 1rem;
     text-align: center;
@@ -222,17 +216,6 @@
     height: 32rem;
   }
 
-  .stats {
-    position: absolute;
-    top: 425px;
-    left: 145px;
-    background: radial-gradient(#eee, #4567aa);
-    border: 1px solid #0388a6;
-    box-shadow: 0 0 30px #111;
-    opacity: 0.8;
-    width: 18rem;
-  }
-
   /********** MAP changes **********/
   .mapContent {
     display: flex;
@@ -257,6 +240,11 @@
     padding: 1rem;
     font-size: 1.2em;
     text-align: center;
+  }
+
+  #adImg {
+    width: 40rem;
+    height: 30rem;
   }
 
   /*----------- FORM --------------*/

@@ -224,7 +224,6 @@ main {
   grid-column: 1 / 8;
   grid-row: 1;
   background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
   font-size: 1rem;
   text-align: center;
 }
@@ -246,6 +245,7 @@ main {
   margin-top: 10px;
   margin-bottom: 5px;
   width: 97%;
+  height: 20rem;
 }
 
 #actionMains {
@@ -272,7 +272,6 @@ main {
   grid-column: 1 / 8;
   grid-row: 2/3;
   background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
   padding: 20px;
   font-size: 1rem;
   text-align: center;
@@ -284,7 +283,6 @@ main {
   grid-column: 1/8;
   grid-row: 3;
   background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
   padding: 20px;
   font-size: 1rem;
   text-align: center;
@@ -294,7 +292,7 @@ main {
   grid-column: 1/8;
   grid-row: 4;
   background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
+
   padding: 20px;
   font-size: 1rem;
   text-align: center;
@@ -305,7 +303,6 @@ main {
   grid-column: 1/8;
   grid-row: 5;
   background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
   padding: 20px;
   font-size: 1rem;
   text-align: center;
@@ -336,7 +333,7 @@ main {
   margin-top: 10px;
   background-color: #807fbf;
   border-radius: 10px;
-  height: 18rem;
+  height: 21rem;
 }
 
 .busImg {
@@ -348,7 +345,6 @@ main {
   grid-column: 1/7;
   grid-row: 6;
   background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
   padding: 20px;
   font-size: 1rem;
   text-align: center;
@@ -616,6 +612,27 @@ select.bo {
 
 /*********** AD **********/
 #adImg {
-  width: 40rem;
-  height: 30rem;
+  width: 20rem;
+  height: 15rem;
+}
+
+/* hide weather 5 and 4 */
+#dayTitle5 {
+  display: none;
+}
+#weatherIcon5 {
+  display: none;
+}
+#data5 {
+  display: none;
+}
+
+#dayTitle4 {
+  display: none;
+}
+#weatherIcon4 {
+  display: none;
+}
+#data4 {
+  display: none;
 }
