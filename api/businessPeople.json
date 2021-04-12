@@ -1,32 +1,32 @@
 {
-  "business": [
+  "businessPeople": [
     {
       "name": "Tom",
       "lastname": "Smith",
       "birthdate": "23 December 1983",
       "imageurl": "https://iskarr.github.io/austindonovan.github.io/Chamber/images/business_imgs/tom.jpg",
-      "description": "I'm the description about this person that hasn't been filled in yet."
+      "description": "Dedicated businessman who is always investing in new products delivered to his business, Idea Portal."
     },
     {
       "name": "Paulina",
       "lastname": "Young",
       "birthdate": "01 June 1801",
       "imageurl": "https://iskarr.github.io/austindonovan.github.io/Chamber/images/business_imgs/paulina.jpg",
-      "description": "I'm the description about this person that hasn't been filled in yet."
+      "description": "Competitive entrepreneur who is making a lot of money building her mug business. She knows why you need one. "
     },
     {
       "name": "Andrea",
       "lastname": "Taylor",
       "birthdate": "01 June 1801",
       "imageurl": "https://iskarr.github.io/austindonovan.github.io/Chamber/images/business_imgs/andrea.jpg",
-      "description": "I'm the description about this person that hasn't been filled in yet."
+      "description": "Andrea works for a law firm which is strong in business connections."
     },
     {
       "name": "Karoline",
       "lastname": "Woodruff",
       "birthdate": "01 June 1801",
       "imageurl": "https://iskarr.github.io/austindonovan.github.io/Chamber/images/business_imgs/karoline.jpg",
-      "description": "I'm the description about this person that hasn't been filled in yet."
+      "description": "Karoline works as a home renovator."
     },
     {
       "name": "Julia",
